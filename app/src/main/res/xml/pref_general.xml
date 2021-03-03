@@ -1,0 +1,83 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<CheckBoxPreference
+        android:key="example_checkbox"
+        android:title="@string/pref_title_social_recommendations"
+        android:summary="@string/pref_description_social_recommendations"
+        android:defaultValue="true" />
+    -->
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:key="pref_key_general_boat_name"
+        android:title="@string/pref_title_general_boat_name"
+        android:summary="@string/pref_description_general_boat_name"
+        android:defaultValue="@string/pref_default_general_boat_name"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <ListPreference
+        android:key="pref_key_general_boat_flag"
+        android:title="@string/pref_title_general_boat_flag"
+        android:defaultValue="1"
+        android:entries="@array/flagsArray"
+        android:entryValues="@array/flagsValues"/>
+
+    <EditTextPreference
+        android:key="pref_key_general_boat_port"
+        android:title="@string/pref_title_general_boat_port"
+        android:defaultValue=""
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <EditTextPreference
+        android:key="pref_key_general_boat_mmsi"
+        android:title="@string/pref_title_general_boat_mmsi"
+        android:summary="@string/pref_description_general_boat_mmsi"
+        android:defaultValue="@string/pref_default_general_boat_mmsi"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <EditTextPreference
+        android:key="pref_key_general_boat_uuid"
+        android:title="@string/pref_title_general_boat_uuid"
+        android:summary="@string/pref_description_general_boat_uuid"
+        android:defaultValue="@string/pref_default_general_boat_uuid"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <EditTextPreference
+        android:key="pref_key_general_boat_url"
+        android:title="@string/pref_title_general_boat_url"
+        android:summary="@string/pref_description_general_boat_url"
+        android:defaultValue="@string/pref_default_general_boat_url"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <ListPreference
+        android:key="pref_key_general_boat_type"
+        android:title="@string/pref_title_general_boat_type"
+        android:summary="@string/pref_description_general_boat_type"
+        android:entries="@array/pref_general_boat_type_titles"
+        android:entryValues="@array/pref_general_boat_type_values"
+        android:defaultValue="@string/pref_default_general_boat_type"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+
+</PreferenceScreen>

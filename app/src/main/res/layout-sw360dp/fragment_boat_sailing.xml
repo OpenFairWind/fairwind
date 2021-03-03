@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:SingleDataView="http://schemas.android.com/apk/res-auto"
+    xmlns:CompassView="http://schemas.android.com/apk/res-auto"
+    xmlns:AmplifiedWindAngleView="http://schemas.android.com/apk/res-auto"
+    xmlns:WindAngleView="http://schemas.android.com/apk/res-auto"
+    xmlns:WindDirectionView="http://schemas.android.com/apk/res-auto"
+    xmlns:BoatSpeedView="http://schemas.android.com/apk/res-auto"
+    xmlns:BoatDirectionView="http://schemas.android.com/apk/res-auto"
+    xmlns:SpeedView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.AmplifiedWindAngleView
+            android:id="@+id/aawaView"
+            android:orientation="horizontal"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+
+            AmplifiedWindAngleView:wind="apparent"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="gauge"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindAngleView
+            android:id="@+id/awaView"
+            android:orientation="horizontal"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+
+            WindAngleView:wind="apparent"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="gauge"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.BoatSpeedView
+            android:id="@+id/speedView"
+            android:orientation="horizontal"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+
+            SingleDataView:speed="speedometer"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="gauge"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <it.uniparthenope.fairwind.sdk.ui.BoatDirectionView
+            android:id="@+id/headingView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+
+            BoatDirectionView:direction="compass"
+            CompassView:compass="magnetic"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindDirectionView
+            android:id="@+id/awdView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+
+            WindDirectionView:wind="real"
+            CompassView:compass="geographic"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.InclinometerView
+            android:id="@+id/inclinometerView"
+            android:orientation="horizontal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="gauge"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.BoatSpeedView
+            android:id="@+id/vmgView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+
+            BoatSpeedView:speed="vmg"
+            CompassView:compass="geographic"
+            SpeedView:wind="real"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindSpeedView
+            android:id="@+id/twsView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+
+            CompassView:compass="geographic"
+            CompassView:wind="real"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

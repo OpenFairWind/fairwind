@@ -1,0 +1,172 @@
+{
+  "50f004fa-dc3c-11e6-bf26-cec0c932ce01": {
+    "uuid":"50f004fa-dc3c-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://mt0.googleapis.com/mapslt",
+      "http://mt1.googleapis.com/mapslt",
+      "http://mt2.googleapis.com/mapslt",
+      "http://mt3.googleapis.com/mapslt"
+    ],
+    "visible": true,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "Balneabilità",
+    "desc": "Balneabilità Regione Campania",
+    "copyright": "ARPAC",
+    "sourceUrl":"http://balneazione.arpacampania.it/balneazione/",
+    "minZoom": 0,
+    "params": [
+      {
+        "lh": "it-IT"
+      },
+      {
+        "lyrs": "kml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOdWjoHlKsbhAzZ8StS1MoE%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3%2Ckml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOdYtjCooYUtTIB%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3%2Ckml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOdQoCKUK5uEPLjzpEz4yKG7PgVKWplAg%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3%2Ckml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOd4jcBeHJmXFRnE4A3Y-5FiqrDlQk%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3"
+      },
+      {
+        "x": "{$x}"
+      },
+      {
+        "y": "{$y}"
+      },
+      {
+        "z": "{$z}"
+      },
+      {
+        "w": "256"
+      },
+      {
+        "h": "256"
+      },
+      {
+        "source": "apiv3"
+      },
+      {
+        "token": "50129"
+      }
+    ],
+    "order": 50
+  },
+  "40ccd0c6-dc3c-11e6-bf26-cec0c932ce01": {
+    "uuid":"40ccd0c6-dc3c-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://undefined.tile.openweathermap.org/map/precipitation/{$z}/{$x}/{$y}.png"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "Precipitation",
+    "desc": "Tiled precipitation",
+    "copyright": "OpenWeatherMap",
+    "sourceUrl":"http://openweathermap.org",
+    "minZoom": 0,
+    "order": 80
+  },
+  "325010d0-dc3c-11e6-bf26-cec0c932ce01": {
+    "uuid":"325010d0-dc3c-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "https://maps.ngdc.noaa.gov/arcgis/rest/services/web_mercator/gebco_2014_contours/MapServer/tile//{$z}/{$y}/{$x}"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "GEBCO",
+    "desc": "GEBCO contoured shaded seafloor",
+    "copyright": "NOAA, GEBCO et Al.",
+    "sourceUrl":"http://maps.ngdc.noaa.gov/arcgis/rest/services/web_mercator/gebco_2014_contours/MapServer",
+    "minZoom": 0,
+    "order": 40
+  },
+  "23bcd134-dc3c-11e6-bf26-cec0c932ce01": {
+    "uuid":"23bcd134-dc3c-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://korona.geog.uni-heidelberg.de/tiles/asterh/?x={$x}&y={$y}&z={$z}"
+    ],
+    "visible": true,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "Hillshade",
+    "desc": "ASTER GDEM & SRTM Hillshade layer",
+    "copyright": "Chair of GIScience - Department of Geography Heidelberg University, Germany",
+    "sourceUrl":"http://korona.geog.uni-heidelberg.de",
+    "minZoom": 0,
+    "order": 10
+  },
+  "10763fc0-dc3c-11e6-bf26-cec0c932ce01": {
+    "uuid":"10763fc0-dc3c-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{$z}/{$y}/{$x}"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "World_Ocean_Base",
+    "desc": "World Ocean Base shaded seafloor",
+    "copyright": "NOAA, GEBCO et Al.",
+    "sourceUrl":"https://www.arcgis.com/home/item.html?id=1e126e7520f9466c9ca28b8f28b5e500",
+    "minZoom": 0,
+    "order": 20
+  },
+  "ff798542-dc3b-11e6-bf26-cec0c932ce01": {
+    "uuid":"ff798542-dc3b-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://undefined.tile.openweathermap.org/map/clouds/{$z}/{$x}/{$y}.png"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "Clouds",
+    "desc": "Clouds cover tiled map",
+    "copyright": "OpenWeatherMap",
+    "sourceUrl":"http://openweathermap.org",
+    "minZoom": 0,
+    "order": 70
+  },
+  "e61cf1c4-dc3b-11e6-bf26-cec0c932ce01": {
+    "uuid":"e61cf1c4-dc3b-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://tiles.openseamap.org/seamark/{$z}/{$x}/{$y}.png"
+    ],
+    "visible": true,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "Sea Marks",
+    "desc": "Open Sea Map",
+    "copyright": "OpenSeaMap - Creative Commons",
+    "sourceUrl":"http://www.openseamap.org",
+    "minZoom": 0,
+    "order": 60
+  },
+  "b806102c-dc3b-11e6-bf26-cec0c932ce01": {
+    "uuid":"b806102c-dc3b-11e6-bf26-cec0c932ce01",
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://a.tile.openstreetmap.org/{$z}/{$x}/{$y}.png",
+      "http://b.tile.openstreetmap.org/{$z}/{$x}/{$y}.png",
+      "http://c.tile.openstreetmap.org/{$z}/{$x}/{$y}.png"
+    ],
+    "visible": true,
+    "maxZoom": 22,
+    "tileSize": 256,
+    "imageEnding":".png",
+    "name": "Mapnik",
+    "desc": "Mapnik Open Street Map",
+    "copyright": "Mapnik - Creative Commons",
+    "sourceUrl":"http://www.mapnik.org",
+    "minZoom": 0,
+    "order": 0
+  }
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="it.uniparthenope.fairwind.sdk.ui.ButtonBarView">
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/layout_bottombar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingBottom="0dp">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:gravity="right">
+
+                <TextView android:id="@+id/lbl_depth" android:layout_width="match_parent" android:layout_height="20dp"
+                    android:text="@string/boat_depth" android:textColor="#fff"
+                    />
+
+                <TextView android:id="@+id/txt_depth" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="-.-" android:textColor="#fff"
+                    android:textSize="40sp"
+                    android:textAlignment="inherit" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_1"
+                android:src="@drawable/bottombutton"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:background="@color/button_material_light"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2"
+                android:src="@drawable/bottombutton"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:background="@color/button_material_light"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3"
+                android:src="@drawable/bottombutton"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:background="@color/button_material_light"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_4"
+                android:src="@drawable/bottombutton"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:background="@color/button_material_light"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_5"
+                android:src="@drawable/bottombutton"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:background="@color/button_material_light"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+            </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:gravity="left">
+
+                <TextView android:id="@+id/lbl_fuel" android:layout_width="match_parent" android:layout_height="20dp"
+                    android:text="@string/boat_fuel" android:textColor="#fff"
+                    />
+
+                <TextView android:id="@+id/txt_fuel" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="-.-" android:textColor="#fff"
+                    android:textSize="40sp"
+                    android:textAlignment="inherit" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

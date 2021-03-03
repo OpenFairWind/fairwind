@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="it.uniparthenope.fairwind.sdk.ui.ButtonBarView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_topbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingBottom="0dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_home"
+                android:src="@drawable/topbutton"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:adjustViewBounds="false"
+                android:background="@color/button_material_light"
+                android:layout_alignParentStart="true"
+                />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"  android:layout_centerInParent="true">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView android:id="@+id/lbl_latitude" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_latitude" android:textColor="#fff"
+                         />
+
+                    <TextView android:id="@+id/txt_latitude" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="__°&apos;__&apos;___?" android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView android:id="@+id/lbl_longitude" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_longitude" android:textColor="#fff"
+                         />
+
+                    <TextView android:id="@+id/txt_longitude" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="___°&apos;__&apos;___?" android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textAlignment="inherit" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView android:id="@+id/lbl_cog" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_cog" android:textColor="#fff"
+                        />
+
+                    <TextView android:id="@+id/txt_cog" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="___°" android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView android:id="@+id/lbl_sog" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/boat_sog" android:textColor="#fff"
+                        />
+
+                    <TextView android:id="@+id/txt_sog" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="_.__ kn" android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textAlignment="inherit" />
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_1"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_2"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_3"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_4"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light"
+                    />
+
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView android:id="@+id/lbl_wptname" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_wptname" android:textColor="#fff"
+                         />
+
+                    <TextView android:id="@+id/txt_wptname" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.-" android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textAlignment="inherit" />
+
+                    <TextView android:id="@+id/lbl_wptinfo" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_wptinfo" android:textColor="#fff"
+                         />
+
+                    <TextView android:id="@+id/txt_wptinfo" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.- -.-" android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView android:id="@+id/lbl_bearing" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_bearing" android:textColor="#fff"
+                        />
+
+                    <TextView android:id="@+id/txt_bearing" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.-" android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textAlignment="inherit" />
+
+                    <TextView android:id="@+id/lbl_vmg" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_vmg" android:textColor="#fff"
+                        />
+
+                    <TextView android:id="@+id/txt_vmg" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.-" android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_info"
+                android:src="@drawable/topbutton"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:adjustViewBounds="false"
+                android:background="@color/button_material_light"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

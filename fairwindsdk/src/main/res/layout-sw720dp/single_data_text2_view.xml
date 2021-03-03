@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.uniparthenope.fairwind.sdk.ui.base.SingleDataView">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView android:id="@+id/txt_data" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="__.__"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+            <TextView android:id="@+id/lbl_data" android:layout_width="wrap_content" android:layout_height="20dp"
+                android:text=""
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.CardView>

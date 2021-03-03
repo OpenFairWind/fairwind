@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_key_mocklocations_active"
+        android:title="@string/perf_title_mocklocations_active"
+        android:defaultValue="@bool/pref_default_mocklocations_active" />
+
+    <ListPreference
+        android:key="pref_key_mocklocations_providername"
+        android:title="@string/pref_title_mocklocations_providername"
+        android:entries="@array/pref_mocklocations_providername_titles"
+        android:entryValues="@array/pref_mocklocations_providername_values"
+        android:defaultValue="GPS"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+
+
+
+</PreferenceScreen>

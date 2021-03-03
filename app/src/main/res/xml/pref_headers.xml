@@ -1,0 +1,35 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="it.uniparthenope.fairwind.captain.setup.SetupActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/boat_red_32x32"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="it.uniparthenope.fairwind.captain.setup.preferences.datalistener.DataListenerPreferencesFragment"
+        android:title="@string/pref_header_services" />
+
+    <header
+        android:fragment="it.uniparthenope.fairwind.captain.setup.preferences.meta.MetaPreferencesFragment"
+        android:title="@string/pref_header_meta" />
+
+    <header
+        android:fragment="it.uniparthenope.fairwind.captain.setup.SetupActivity$GuiPreferenceFragment"
+        android:title="@string/pref_header_gui" />
+
+
+    <header
+        android:fragment="it.uniparthenope.fairwind.captain.setup.preferences.map.MapPreferencesFragment"
+        android:title="@string/pref_header_maps" />
+
+    <header
+        android:fragment="it.uniparthenope.fairwind.captain.setup.SetupActivity$ApplicationsPreferenceFragment"
+        android:title="@string/pref_header_applications" />
+
+    <header
+        android:fragment="it.uniparthenope.fairwind.captain.setup.ToolsPreferencesFragment"
+        android:title="@string/pref_header_tools" />
+
+</preference-headers>

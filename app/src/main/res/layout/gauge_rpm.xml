@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<it.uniparthenope.fairwind.sdk.ui.base.GaugeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="720dp"
+    android:layout_height="220dp" style="@style/gaugeRPM">
+</it.uniparthenope.fairwind.sdk.ui.base.GaugeView>

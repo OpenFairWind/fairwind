@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_key_webserver_active"
+        android:title="@string/perf_title_webserver_active"
+        android:defaultValue="@bool/pref_default_webserver_active" />
+
+    <Preference
+        android:title="@string/pref_title_webserver_documentroot"
+        android:key="pref_key_webserver_documentroot"
+        />
+
+    <Preference
+        android:title="@string/pref_title_webserver_download_apps"
+        android:summary="@string/pref_description_webserver_download_apps"
+        android:key="pref_key_webserver_download_apps"
+        />
+
+    <EditTextPreference
+        android:key="pref_key_webserver_portrest"
+        android:title="@string/pref_title_webserver_portrest"
+        android:defaultValue="@integer/pref_default_webserver_portrest"
+        android:selectAllOnFocus="true"
+        android:inputType="numberDecimal" />
+
+    <EditTextPreference
+        android:key="pref_key_webserver_portws"
+        android:title="@string/pref_title_webserver_portws"
+        android:defaultValue="@integer/pref_default_webserver_portws"
+        android:selectAllOnFocus="true"
+        android:inputType="numberDecimal" />
+
+    <ListPreference
+        android:key="pref_key_webserver_timeout"
+        android:title="@string/pref_title_webserver_timeout"
+        android:entries="@array/pref_webserver_timeout_titles"
+        android:entryValues="@array/pref_webserver_timeout_values"
+        android:defaultValue="@integer/pref_default_webserver_timeout"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <CheckBoxPreference
+        android:key="pref_key_webserver_isinput"
+        android:title="@string/perf_title_webserver_isinput"
+        android:defaultValue="@bool/pref_default_webserver_isinput" />
+
+    <CheckBoxPreference
+        android:key="pref_key_webserver_isoutput"
+        android:title="@string/perf_title_webserver_isoutput"
+        android:defaultValue="@bool/pref_default_webserver_isoutput" />
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183bluetooth_active"
+        android:title="@string/perf_title_nmea0183bluetooth_active"
+        android:defaultValue="@string/pref_default_nmea0183bluetooth_active" />
+
+    <Preference
+        android:title="@string/perf_title_nmea0183bluetooth_paire_device"
+        android:key="pref_key_nmea0183bluetooth_paire_device"
+        />
+
+    <Preference
+        android:title="@string/perf_title_nmea0183bluetooth_device_connected"
+        android:defaultValue="No device"
+        android:key="pref_key_nmea0183bluetooth_device_connected"
+        />
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183bluetooth_isinput"
+        android:title="@string/perf_title_nmea0183bluetooth_isinput"
+        android:defaultValue="@bool/pref_default_nmea0183bluetooth_isinput" />
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183bluetooth_isoutput"
+        android:title="@string/perf_title_nmea0183bluetooth_isoutput"
+        android:defaultValue="@bool/pref_default_nmea0183bluetooth_isoutput" />
+
+</PreferenceScreen>

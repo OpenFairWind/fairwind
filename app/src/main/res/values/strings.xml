@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">FairWind</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="dialog_nmea0183usbserialclient">NMEA0183 Usb Serial Client</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_apps_list">AppsListActivity</string>
+
+    <string name="title_activity_ais">AIS</string>
+    <string name="title_activity_anchor">Anchor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="boat_time">Time</string>
+    <string name="boat_position">Position</string>
+    <string name="boat_crs">CRS</string>
+    <string name="boat_brg">BRG</string>
+    <string name="boat_latitude">Latitude</string>
+    <string name="boat_longitude">Longitude</string>
+    <string name="boat_cog">COG</string>
+    <string name="boat_sog">SOG</string>
+    <string name="boat_heading">Heading</string>
+    <string name="boat_speed">Speed</string>
+    <string name="boat_depth">Depth</string>
+    <string name="boat_awa">Apparent Wind Angele</string>
+    <string name="boat_aws">Apparent Wind Speeed</string>
+    <string name="boat_twd">True Wind Direction</string>
+    <string name="boat_tws">True Wind Speeed</string>
+    <string name="play_nmea_file_button_text">Play</string>
+    <string name="stop_nmea_file_button_text">Stop</string>
+    <string name="title_activity_boat">BoatActivity</string>
+    <string name="title_activity_my_data">MyDataActivity</string>
+    <string name="info_title">FairWind BeTa ANDROID</string>
+    <string name="info_version">Version:</string>
+    <string name="info_deviceid">DeviceID:</string>
+    <string name="info_group_title">The FairWind Team</string>
+    <string name="info_group">University of Napoli Parthenope, http://fairwind.uniparthenope.it, 2011-2017</string>
+    <string name="info_description">Smart, Cloud-Enabled, Navigation System for Boats and Yachts</string>
+    <string name="info_team">Team Leader and Developer: Raffaele Montella\nSocial, Media and Communication: Federica Izzo\nData Management: Diana Di Luccio</string>
+    <string name="info_text">FairWind\nVERSION 1.0\nSmart, Cloud-Enabled, Navigation System for Boats and Yachts\nThe FairWind Team\nUniversity of Napoli Parthenope, http://fairwind.uniparthenope.it, 2016</string>
+    <string name="team_text">Team Leader and Developer: Raffaele Montella\n\nSocial, Media and Communication: Federica Izzo\nData Management: Diana Di Luccio</string>
+    <string name="mydata_reading_file">Is active reading from file: </string>
+    <string name="mydata_alert_title">WARNING!</string>
+    <string name="mydata_alert_message">You are activating the reading of files! Do you want to continue?</string>
+    <string name="mydata_yes">Yes</string>
+    <string name="mydata_no">No</string>
+    <string name="open">Open</string>
+    <string name="copy">Copy</string>
+    <string name="rename">Rename</string>
+    <string name="share">Share</string>
+    <string name="intent_share_file">Share File</string>
+    <string name="intent_open_file">Show File</string>
+    <string name="home_app">Home App</string>
+    <string name="marine_app">Marine App</string>
+    <string name="boat_app">Boat App</string>
+    <string name="remove">Remove</string>
+
+
+    <string name="lbl_maps"> : Map not found. You want to download it? </string>
+    <string name="btn_maps_download">Download map</string>
+
+    <string name="drawer_legend">LEGEND</string>
+    <string name="drawer_my_boat">My Boat</string>
+    <string name="drawer_awa">Apparent wind angle</string>
+    <string name="drawer_twa">True wind angle</string>
+    <string name="drawer_wind_rose">Wind rose</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission_desc">FairWind Content Provider permission</string>
+    <string name="permission_label">FairWindContentProvider</string>
+    <string name="title_activity_maps_forge">MapsForgeActivity</string>
+    <string name="txtLinks">Click <a href="http://fairwind.uniparthenope.it/en/privaci-policy-mobile">here</a> for the Provacy Policy.</string>
+
+
+    <string-array name="planets_array">
+        <item>Depth</item>
+        <item>Apparent Wind</item>
+        <item>True Wind</item>
+        <item>Boat Speed</item>
+        <item>Oil</item>
+        <item>Water Temperature</item>
+    </string-array>
+</resources>

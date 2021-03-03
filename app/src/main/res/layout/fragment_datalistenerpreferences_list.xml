@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Enabled"
+                android:textAppearance="?attr/textAppearanceListItem"
+                />
+
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="?attr/textAppearanceListItem"
+                />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:text="Input" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:text="Output" />
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/list_datalistenerpreferences"
+            android:name="it.uniparthenope.fairwind.captain.setup.DataListenerPreferencesFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            tools:context="it.uniparthenope.fairwind.captain.setup.preferences.datalistener.DataListenerPreferencesFragment"
+            tools:listitem="@layout/fragment_datalistenerpreferences_item" />
+
+    <!--</LinearLayout>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/nnf_ic_collections_add_collection"
+        app:layout_anchor="@+id/list_datalistenerpreferences"
+        app:layout_anchorGravity="bottom|right|end"
+        android:id="@+id/add_datalistenerpreferences_item" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,139 @@
+{
+  "reg15-balneabilita": {
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://mt0.googleapis.com/mapslt",
+      "http://mt1.googleapis.com/mapslt",
+      "http://mt2.googleapis.com/mapslt",
+      "http://mt3.googleapis.com/mapslt"
+    ],
+    "visible": true,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "name": "reg15-balneabilita",
+    "desc": "Balneabilità Regione Campania",
+    "copyright": "ARPAC",
+    "sourceUrl":"http://balneazione.arpacampania.it/balneazione/",
+    "minZoom": 0,
+    "params": [
+      {
+        "lh": "it-IT"
+      },
+      {
+        "lyrs": "kml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOdWjoHlKsbhAzZ8StS1MoE%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3%2Ckml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOdYtjCooYUtTIB%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3%2Ckml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOdQoCKUK5uEPLjzpEz4yKG7PgVKWplAg%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3%2Ckml%3AcO5kZwREUcvDucDWgo3eVNlWnkJkRHEEhB-9GsZOd4jcBeHJmXFRnE4A3Y-5FiqrDlQk%7Capi%3A3%7Cclient%3A2%7Cks%3A%3Bdc%3Aio%3Bts%3A48960170%7Ckv%3A3"
+      },
+      {
+        "x": "{$x}"
+      },
+      {
+        "y": "{$y}"
+      },
+      {
+        "z": "{$z}"
+      },
+      {
+        "w": "256"
+      },
+      {
+        "h": "256"
+      },
+      {
+        "source": "apiv3"
+      },
+      {
+        "token": "50129"
+      }
+    ],
+    "order": 50
+  },
+  "precipitation": {
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://undefined.tile.openweathermap.org/map/precipitation/{$z}/{$x}/{$y}.png"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "name": "precipitation",
+    "desc": "Precipitation",
+    "copyright": "OpenWeatherMap",
+    "sourceUrl":"http://openweathermap.org",
+    "minZoom": 0,
+    "order": 80
+  },
+  "gebco_2014_contours": {
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "https://maps.ngdc.noaa.gov/arcgis/rest/services/web_mercator/gebco_2014_contours/MapServer/tile//{$z}/{$y}/{$x}"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "name": "gebco_2014_contours",
+    "desc": "GEBCO contoured shaded seafloor",
+    "copyright": "NOAA, GEBCO et Al.",
+    "sourceUrl":"http://maps.ngdc.noaa.gov/arcgis/rest/services/web_mercator/gebco_2014_contours/MapServer",
+    "minZoom": 0,
+    "order": 40
+  },
+  "asterh": {
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://korona.geog.uni-heidelberg.de/tiles/asterh/?x={$x}&y={$y}&z={$z}"
+    ],
+    "visible": true,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "name": "asterh",
+    "desc": "ASTER GDEM & SRTM Hillshade layer",
+    "copyright": "Chair of GIScience - Department of Geography Heidelberg University, Germany",
+    "sourceUrl":"http://korona.geog.uni-heidelberg.de",
+    "minZoom": 0,
+    "order": 10
+  },
+  "World_Ocean_Base": {
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{$z}/{$y}/{$x}"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "name": "World_Ocean_Base",
+    "desc": "World Ocean Base shaded seafloor",
+    "copyright": "NOAA, GEBCO et Al.",
+    "sourceUrl":"https://www.arcgis.com/home/item.html?id=1e126e7520f9466c9ca28b8f28b5e500",
+    "minZoom": 0,
+    "order": 20
+  },
+  "clouds": {
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://undefined.tile.openweathermap.org/map/clouds/{$z}/{$x}/{$y}.png"
+    ],
+    "visible": false,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "name": "clouds",
+    "desc": "Clouds cover",
+    "copyright": "OpenWeatherMap",
+    "sourceUrl":"http://openweathermap.org",
+    "minZoom": 0,
+    "order": 70
+  },
+  "seamark": {
+    "className":"it.uniparthenope.fairwind.sdk.maps.source.tiledlayer.TiledLayer",
+    "urls": [
+      "http://tiles.openseamap.org/seamark/{$z}/{$x}/{$y}.png"
+    ],
+    "visible": true,
+    "maxZoom": 19,
+    "tileSize": 256,
+    "name": "seamark",
+    "desc": "Sea marks",
+    "copyright": "OpenSeaMap - Creative Commons",
+    "sourceUrl":"http://www.openseamap.org",
+    "minZoom": 0,
+    "order": 60
+  }
+}

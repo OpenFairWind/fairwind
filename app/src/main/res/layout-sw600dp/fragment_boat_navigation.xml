@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SingleDataView="http://schemas.android.com/apk/res-auto"
+    xmlns:PositionView="http://schemas.android.com/apk/res-auto"
+    xmlns:DepthView="http://schemas.android.com/apk/res-auto"
+    xmlns:CompassView="http://schemas.android.com/apk/res-auto"
+    xmlns:SpeedView="http://schemas.android.com/apk/res-auto"
+    xmlns:BoatDirectionView="http://schemas.android.com/apk/res-auto"
+    xmlns:BoatSpeedView="http://schemas.android.com/apk/res-auto"
+    xmlns:WindAngleView="http://schemas.android.com/apk/res-auto"
+    xmlns:WindDirectionView="http://schemas.android.com/apk/res-auto"
+    xmlns:WindSpeedView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#000000" >
+
+
+
+        <it.uniparthenope.fairwind.sdk.ui.base.PositionView
+            android:id="@+id/positionView"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+
+            PositionView:coords="DDMMSS"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+
+            />
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#000000"
+            >
+
+
+
+
+
+
+            <it.uniparthenope.fairwind.sdk.ui.BoatDirectionView
+                android:id="@+id/cogView"
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+
+                BoatDirectionView:direction="cog"
+                CompassView:compass="geographic"
+                SingleDataView:vessel_uuid="self"
+                SingleDataView:mode="text"
+                />
+
+            <it.uniparthenope.fairwind.sdk.ui.BoatSpeedView
+                android:id="@+id/sogView"
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+
+                SpeedView:unit_speed="knts"
+                SingleDataView:speed="sog"
+                SingleDataView:vessel_uuid="self"
+                SingleDataView:mode="text"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:background="#000000">
+
+
+
+            <it.uniparthenope.fairwind.sdk.ui.gauges.DepthView
+                android:id="@+id/depthView"
+                android:orientation="horizontal"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+
+                DepthView:unit_depth="m"
+                DepthView:depth="transducer"
+                SingleDataView:vessel_uuid="self"
+                SingleDataView:mode="text"
+
+                />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <it.uniparthenope.fairwind.sdk.ui.BoatDirectionView
+                    android:id="@+id/headingView"
+                    android:orientation="horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    BoatDirectionView:direction="compass"
+                    CompassView:compass="magnetic"
+                    SingleDataView:vessel_uuid="self"
+                    SingleDataView:mode="text"
+                    />
+
+                <it.uniparthenope.fairwind.sdk.ui.BoatSpeedView
+                    android:id="@+id/speedView"
+                    android:orientation="horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    BoatSpeedView:speed="speedometer"
+                    SingleDataView:vessel_uuid="self"
+                    SingleDataView:mode="text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#000000">
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindAngleView
+            android:id="@+id/awaView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+
+            WindAngleView:wind="apparent"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindSpeedView
+            android:id="@+id/awsView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+
+            WindSpeedView:wind="apparent"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindDirectionView
+            android:id="@+id/twdView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+
+            WindDirectionView:wind="real"
+            WindDirectionView:compass="geographic"
+            SingleDataView:mode="text"
+            SingleDataView:vessel_uuid="self"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindSpeedView
+            android:id="@+id/twsView"
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+
+            WindSpeedView:wind="real"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

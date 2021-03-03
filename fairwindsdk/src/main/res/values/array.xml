@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="zoomLevel">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="tileSize">
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+    </string-array>
+
+    <string-array name="ranges">
+        <item>-180</item>
+        <item>-60</item>
+        <item>-24</item>
+        <item>24</item>
+        <item>61</item>
+        <item>180</item>
+    </string-array>
+
+
+    <string-array name="rangeColors">
+        <item>#ffffff</item>
+        <item>#ffffff</item>
+        <item>#ff0000</item>
+        <item>#ffffff</item>
+        <item>#00ff00</item>
+        <item>#ffffff</item>
+    </string-array>
+
+    <string-array name="rangesInclinometer">
+        <item>-90</item>
+        <item>-60</item>
+        <item>-24</item>
+        <item>24</item>
+        <item>61</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="rangeColorsInclinometer">
+        <item>#ff0000</item>
+        <item>#ff0000</item>
+        <item>#ff0000</item>
+        <item>#00ff00</item>
+        <item>#00ff00</item>
+        <item>#00ff00</item>
+    </string-array>
+
+    <string name="meta_warn_prompt">Choose a warn method</string>
+    <string name="meta_alarm_prompt">Choose an alarm method</string>
+
+    <string-array name="meta_method_array">
+        <item>None</item>
+        <item>Visual</item>
+        <item>Sound</item>
+    </string-array>
+
+    <string name="meta_zone_state_prompt">Choose an alarm method</string>
+
+    <string-array name="meta_zone_state_array">
+        <item>Normal</item>
+        <item>Alert</item>
+        <item>Warn</item>
+        <item>Alarm</item>
+        <item>Emergency</item>
+    </string-array>
+
+    <string-array name="latitude_southnorth_array">
+        <item>S</item>
+        <item>N</item>
+    </string-array>
+
+    <string-array name="longitude_westeast_array">
+        <item>W</item>
+        <item>E</item>
+    </string-array>
+
+    <string-array name="waypoints_sortby">
+        <item>Date and Time</item>
+        <item>Name</item>
+        <item>Range</item>
+        <item>Type</item>
+    </string-array>
+
+    <string-array name="waypoints_sortorder">
+        <item>Ascendant</item>
+        <item>Descendant</item>
+    </string-array>
+</resources>

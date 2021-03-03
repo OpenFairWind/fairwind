@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PressureView">
+        <attr name="pressure_unit" />
+    </declare-styleable>
+
+    <attr name="pressure_unit">
+        <enum name="pa" value="0"/>
+        <enum name="hpa" value="1"/>
+        <enum name="mb" value="1"/>
+        <enum name="hgmm" value="2"/>
+        <enum name="psi" value="3"/>
+    </attr>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Up"/>
+
+        <TextView
+            android:id="@+id/item_path"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:weightSum="7">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/list_children"
+                android:name="it.uniparthenope.fairwind.captain.setup.preferences.meta.KeysDialogFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                tools:context=".captain.setup.preferences.meta.KeysDialogFragment"
+                tools:listitem="@layout/dialog_children_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="4">
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:weightSum="7">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/item_description"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:text="Description">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/item_units"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Units">
+                    </TextView>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/list_leaf"
+                    android:name="it.uniparthenope.fairwind.captain.setup.preferences.meta.KeysDialogFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    tools:context=".captain.setup.preferences.meta.KeysDialogFragment"
+                    tools:listitem="@layout/dialog_leaf_item" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BoatDirectionView">
+        <attr name="compass"  />
+        <attr name="direction"  />
+    </declare-styleable>
+
+    <attr name="direction" >
+        <enum name="cog" value="0"/>
+        <enum name="compass" value="1"/>
+        <enum name="bearing" value="2"/>
+        <enum name="bearing2wpt" value="3"/>
+    </attr>
+
+</resources>

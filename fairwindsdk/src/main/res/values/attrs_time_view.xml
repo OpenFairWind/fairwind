@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimeView">
+        <attr name="times"/>
+    </declare-styleable>
+
+    <attr name="times">
+        <enum name="HHMM" value="0"/>
+    </attr>
+</resources>

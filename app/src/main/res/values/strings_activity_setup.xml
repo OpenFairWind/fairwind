@@ -1,0 +1,556 @@
+<resources>
+
+
+
+    <string name="title_activity_setup">Setup</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <!--
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+    -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_services">Services</string>
+
+    <string name="pref_title_general_boat_name">Boat name</string>
+    <string name="pref_description_general_boat_name">The common name of the vessel</string>
+    <string name="pref_default_general_boat_name"></string>
+
+
+    <string name="pref_title_general_boat_flag">Boat flag</string>
+    <string name="pref_description_general_boat_flag"></string>
+    <string name="pref_default_general_boat_flag"></string>
+
+
+    <string name="pref_title_general_boat_port">Boat port</string>
+    <string name="pref_description_general_boat_port"></string>
+    <string name="pref_default_general_boat_port"></string>
+
+
+    <string name="pref_title_general_boat_uuid">Boat UUID</string>
+    <string name="pref_description_general_boat_uuid">A unique Signal K flavoured maritime resource identifier, assigned by the server.</string>
+    <string name="pref_default_general_boat_uuid">urn:mrn:signalk:uuid:00000000-0000-0000-0000-000000000000</string>
+
+
+    <string name="pref_title_general_boat_mmsi">Boat MMSI</string>
+    <string name="pref_description_general_boat_mmsi">MMSI number of the vessel, if available.</string>
+    <string name="pref_default_general_boat_mmsi"></string>
+
+
+    <string name="pref_title_general_boat_url">Boat URL</string>
+    <string name="pref_description_general_boat_url">URL based identity of the vessel, if available.</string>
+    <string name="pref_default_general_boat_url"></string>
+
+    <string name="pref_title_general_boat_type">Boat Type</string>
+    <string name="pref_description_general_boat_type"></string>
+    <string name="pref_default_general_boat_type">0</string>
+
+    <string-array name="pref_general_boat_type_titles">
+        <item>Undefined</item>
+        <item>Power boat</item>
+        <item>Fishing boat</item>
+        <item>Dinghy</item>
+        <item>Sloop</item>
+        <item>Cutter</item>
+        <item>Ketch</item>
+        <item>Yawl</item>
+    </string-array>
+
+    <string-array name="pref_general_boat_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+
+
+    <!-- Settings for Serial Data Source -->
+    <string name="pref_header_serialdatasource">Serial Data source</string>
+
+
+
+    <string name="perf_title_nmea0183serialdatasource_active">Active</string>
+    <bool name="pref_default_nmea0183serialdatasource_active">false</bool>
+    <string name="pref_nmea0183serialdatasource_active_summary">Summary</string>
+
+    <string name="pref_title_nmea0183serialdatasource_baudrate">Baud rate</string>
+    <string name="pref_default_nmea0183serialdatasource_baudrate">115200</string>
+
+    <string-array name="pref_nmea0183serialdatasource_baudrate_titles">
+        <item>4800</item>
+        <item>9600</item>
+        <item>115200</item>
+    </string-array>
+
+    <string-array name="pref_nmea0183serialdatasource_baudate_values">
+        <item>4800</item>
+        <item>9600</item>
+        <item>115200</item>
+    </string-array>
+
+    <string name="pref_title_nmea0183serialdatasource_databits">Data bits</string>
+    <string name="pref_default_nmea0183serialdatasource_databits">8</string>
+
+    <string-array name="pref_nmea0183serialdatasource_databits_titles">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="pref_nmea0183serialdatasource_databits_values">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string name="pref_title_nmea0183serialdatasource_paritybit">Parity bit</string>
+    <string name="pref_default_nmea0183serialdatasource_paritybit">0</string>
+
+    <string-array name="pref_nmea0183serialdatasource_paritybit_titles">
+        <item>None</item>
+        <item>Odd</item>
+        <item>Even</item>
+    </string-array>
+
+    <string-array name="pref_nmea0183serialdatasource_paritybit_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_title_nmea0183serialdatasource_stopbits">Stop bits</string>
+    <string name="pref_default_nmea0183serialdatasource_stopbits">1</string>
+
+    <string-array name="pref_nmea0183serialdatasource_stopbits_titles">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_nmea0183serialdatasource_stopbits_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_title_nmea0183serialdatasource_flowcontrol">Flow Control</string>
+    <string name="pref_default_nmea0183serialdatasource_flowcontrol">0</string>
+
+    <string-array name="pref_nmea0183serialdatasource_flowcontrol_titles">
+        <item>None</item>
+        <item>RTS CTS In</item>
+        <item>RTS CTS Out</item>
+        <item>XON XOFF In</item>
+        <item>XON XOFF Out</item>
+    </string-array>
+
+    <bool name="pref_default_nmea0183serialdatasource_isinput">false</bool>
+    <string name="perf_title_nmea0183serialdatasource_isinput">Is input</string>
+    <bool name="pref_default_nmea0183serialdatasource_isoutput">true</bool>
+    <string name="perf_title_nmea0183serialdatasource_isoutput">Is output</string>
+
+    <!--
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    -->
+
+    <!-- Settings for NMEA TcpIpClientDataSource -->
+    <string name="pref_header_nmea0183tcpipclientdatasource">NMEA0183 Tcp/Ip Client Data Source</string>
+
+    <bool name="pref_default_nmea0183tcpipclientdatasource_active">false</bool>
+    <string name="perf_title_nmea0183tcpipclientdatasource_active">Active</string>
+    <string name="pref_nmea0183tcpipclientdatasource_active_summary">Summary</string>
+
+    <string name="pref_title_nmea0183tcpipclientdatasource_host">Host</string>
+    <string name="pref_default_nmea0183tcpipclientdatasource_host">127.0.0.1</string>
+
+    <string name="pref_title_nmea0183tcpipclientdatasource_port">Port</string>
+    <integer name="pref_default_nmea0183tcpipclientdatasource_port">10111</integer>
+
+    <bool name="pref_default_nmea0183tcpipclientdatasource_isinput">false</bool>
+    <string name="perf_title_nmea0183tcpipclientdatasource_isinput">Is input</string>
+
+    <bool name="pref_default_nmea0183tcpipclientdatasource_isoutput">true</bool>
+    <string name="perf_title_nmea0183tcpipclientdatasource_isoutput">Is output</string>
+
+    <!-- Settings for NMEA UdpClientDataSource -->
+    <string name="pref_header_nmea0183udpclientdatasource">NMEA0183 Udp Client Data Source</string>
+
+    <bool name="pref_default_nmea0183udpclientdatasource_active">false</bool>
+    <string name="perf_title_nmea0183udpclientdatasource_active">Active</string>
+    <string name="pref_nmea0183udpclientdatasource_active_summary">Summary</string>
+
+    <string name="pref_title_nmea0183udpclientdatasource_host">Host</string>
+    <string name="pref_default_nmea0183udpclientdatasource_host">127.0.0.1</string>
+
+    <string name="pref_title_nmea0183udpclientdatasource_port">Port</string>
+    <integer name="pref_default_nmea0183udpclientdatasource_port">2000</integer>
+
+    <bool name="pref_default_nmea0183udpclientdatasource_isinput">false</bool>
+    <string name="perf_title_nmea0183udpclientdatasource_isinput">Is input</string>
+
+    <bool name="pref_default_nmea0183udpclientdatasource_isoutput">true</bool>
+    <string name="perf_title_nmea0183udpclientdatasource_isoutput">Is output</string>
+
+    <!-- Settings for SignalK TcpIpClientDataSource -->
+    <string name="pref_header_signalktcpipclientdatasource">SignalK Tcp/Ip Client Data Source</string>
+
+    <bool name="pref_default_signalktcpipclientdatasource_active">false</bool>
+    <string name="perf_title_signalktcpipclientdatasource_active">Active</string>
+    <string name="pref_signalktcpipclientdatasource_active_summary">Summary</string>
+
+    <string name="pref_title_signalktcpipclientdatasource_host">Host</string>
+    <string name="pref_default_signalktcpipclientdatasource_host">127.0.0.1</string>
+
+    <string name="pref_title_signalktcpipclientdatasource_port">Port</string>
+    <integer name="pref_default_signalktcpipclientdatasource_port">55556</integer>
+
+    <bool name="pref_default_signalktcpipclientdatasource_isinput">false</bool>
+    <string name="perf_title_signalktcpipclientdatasource_isinput">Is input</string>
+
+    <bool name="pref_default_signalktcpipclientdatasource_isoutput">true</bool>
+    <string name="perf_title_signalktcpipclientdatasource_isoutput">Is output</string>
+
+    <!-- Settings for SignalKWebSocketClient -->
+    <string name="pref_header_signalkwebsocketclient">SignalK Web Socket Client</string>
+    <bool name="pref_default_signalkwebsocketclient_active">false</bool>
+
+    <string name="perf_title_signalkwebsocketclient_active">Active</string>
+    <string name="pref_signalkwebsocketclient_active_summary">Summary</string>
+
+    <string name="pref_title_signalkwebsocketclient_uri">Uri</string>
+    <string name="pref_default_signalkwebsocketclient_uri">ws://fairwind.uniparthenope.it:3000/signalk/v1/stream?stream=delta</string>
+
+    <string name="pref_title_signalkwebsocketclient_uuid">Server UUID</string>
+    <string name="pref_description_signalkwebsocketclient_uuid">A unique Signal K flavoured maritime resource identifier.</string>
+    <string name="pref_default_signalkwebsocketclient_uuid">urn:mrn:signalk:uuid:821b52be-bfdc-11e5-9912-ba0be0483c18</string>
+
+
+    <bool name="pref_default_signalkwebsocketclient_isinput">false</bool>
+    <string name="perf_title_signalkwebsocketclient_isinput">Is input</string>
+
+    <bool name="pref_default_signalkwebsocketclient_isoutput">true</bool>
+    <string name="perf_title_signalkwebsocketclient_isoutput">Is output</string>
+
+
+    <!-- Settings for NMEA TcpIpServer -->
+    <string name="pref_header_nmea0183tcpipserver">NMEA0183 Tcp/ip server</string>
+    <bool name="pref_default_nmea0183tcpipserver_active">true</bool>
+    <string name="perf_title_nmea0183tcpipserver_active">Active</string>
+    <string name="pref_nmea0183tcpipserver_active_summary">Summary</string>
+
+    <string name="pref_title_nmea0183tcpipserver_port">Port</string>
+    <integer name="pref_default_nmea0183tcpipserver_port">10110</integer>
+
+    <bool name="pref_default_nmea0183tcpipserver_isinput">false</bool>
+    <string name="perf_title_nmea0183tcpipserver_isinput">Is input</string>
+
+    <bool name="pref_default_nmea0183tcpipserver_isoutput">true</bool>
+    <string name="perf_title_nmea0183tcpipserver_isoutput">Is output</string>
+
+    <!-- Settings for SignalK TcpIpServer -->
+    <string name="pref_header_signalktcpipserver">SignalK Tcp/ip server</string>
+    <bool name="pref_default_signalktcpipserver_active">true</bool>
+    <string name="perf_title_signalktcpipserver_active">Active</string>
+    <string name="pref_signalktcpipserver_active_summary">Summary</string>
+
+    <string name="pref_title_signalktcpipserver_port">Port</string>
+    <integer name="pref_default_signalktcpipserver_port">55555</integer>
+
+    <bool name="pref_default_signalktcpipserver_isinput">false</bool>
+    <string name="perf_title_signalktcpipserver_isinput">Is input</string>
+
+    <bool name="pref_default_signalktcpipserver_isoutput">true</bool>
+    <string name="perf_title_signalktcpipserver_isoutput">Is output</string>
+
+    <integer name="pref_default_signalktcpipserver_timeout">500</integer>
+
+    <!-- Settings for NMEA UdpServer  -->
+
+    <string name="pref_header_nmea0183udpserver">NMEA0183 Udp server</string>
+    <bool name="pref_default_nmea0183udpserver_active">true</bool>
+    <string name="perf_title_nmea0183udpserver_active">Active</string>
+    <string name="pref_nmea0183udpserver_active_summary">Summary</string>
+
+    <string name="pref_title_nmea0183udpserver_port">Port</string>
+    <integer name="pref_default_nmea0183udpserver_port">2000</integer>
+
+    <bool name="pref_default_nmea0183udpserver_isinput">false</bool>
+    <string name="perf_title_nmea0183udpserver_isinput">Is input</string>
+
+    <bool name="pref_default_nmea0183udpserver_isoutput">true</bool>
+    <string name="perf_title_nmea0183udpserver_isoutput">Is output</string>
+
+
+
+
+    <!-- Settings for WebServer -->
+
+    <string name="pref_header_webserver">Web Server</string>
+    <bool name="pref_default_webserver_active">true</bool>
+    <string name="perf_title_webserver_active">Active</string>
+    <string name="pref_webserver_active_summary">Summary</string>
+    <string name="pref_title_webserver_documentroot">Document root</string>
+
+    <string name="pref_title_webserver_download_apps">Download</string>
+    <string name="pref_description_webserver_download_apps">Click here to download the web apps</string>
+
+    <string name="pref_title_webserver_portrest">RESP Port</string>
+    <integer name="pref_default_webserver_portrest">8080</integer>
+    <string name="pref_title_webserver_portws">WS port</string>
+    <integer name="pref_default_webserver_portws">3000</integer>
+
+    <string name="pref_title_webserver_timeout">Timeout</string>
+    <integer name="pref_default_webserver_timeout">-1</integer>
+
+    <string-array name="pref_webserver_timeout_titles">
+        <item>None</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="pref_webserver_timeout_values">
+        <item>-1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <bool name="pref_default_webserver_isinput">false</bool>
+    <string name="perf_title_webserver_isinput">Is input</string>
+
+    <bool name="pref_default_webserver_isoutput">true</bool>
+    <string name="perf_title_webserver_isoutput">Is output</string>
+
+
+    <!-- Settings for Servant -->
+    <string name="pref_header_servant">Servant</string>
+    <bool name="pref_default_servant_active">true</bool>
+
+    <string name="perf_title_servant_active">Active</string>
+    <string name="pref_servant_active_summary">Summary</string>
+
+    <string name="pref_title_servant_port1type">Port 1</string>
+
+    <string-array name="pref_servant_port1type_titles">
+        <item>None</item>
+        <item>SeaTalk</item>
+        <item>NMEA 4800bps</item>
+    </string-array>
+
+    <string-array name="pref_servant_port1type_values">
+        <item>none</item>
+        <item>seatalk</item>
+        <item>nmea_4800</item>
+    </string-array>
+
+    <string name="pref_title_servant_port1label">Port 1 Label</string>
+    <string name="pref_default_servant_port1label">nmea1</string>
+
+    <string name="pref_title_servant_port2type">Port 2</string>
+
+    <string-array name="pref_servant_port2type_titles">
+        <item>None</item>
+        <item>SeaTalk</item>
+        <item>NMEA 4800bps</item>
+    </string-array>
+
+    <string-array name="pref_servant_port2type_values">
+        <item>none</item>
+        <item>seatalk</item>
+        <item>nmea_4800</item>
+    </string-array>
+
+    <string name="pref_title_servant_port2label">Port 2 Label</string>
+    <string name="pref_default_servant_port2label">stalk2</string>
+
+    <!-- Settings for Board Log -->
+    <string name="pref_header_boardlog">Board Log</string>
+    <string name="pref_servant_boardlog_summary">Summary</string>
+
+    <string name="pref_default_boardlog_nmeaactive">true</string>
+    <string name="perf_title_boardlog_nmeaactive">NMEA</string>
+
+
+    <string name="pref_default_boardlog_depthpath"></string>
+    <string name="pref_default_boardlog_depthactive">true</string>
+    <string name="perf_title_boardlog_depthactive">Depth (time; longitude;latitude; depth)</string>
+
+    <string name="pref_header_gui">GUI Settings</string>
+    <string name="pref_title_gui_theme">Theme</string>
+    <string name="pref_default_gui_theme">Standard</string>
+    <string-array name="pref_gui_theme_values">
+        <item>Standard</item>
+        <item>Night green</item>
+        <item>Night red</item>
+    </string-array>
+    <string name="pref_title_gui_keep_screen_on">Keep screen on</string>
+    <bool name="pref_default_gui_keep_screen_on">false</bool>
+
+    <!-- Settings for NMEAPlayerDataSource -->
+    <string name="pref_header_nmea0183playerdatasource">NMEA Player Data Source</string>
+    <bool name="pref_default_nmea0183playerdatasource_active">false</bool>
+
+    <string name="perf_title_nmea0183playerdatasource_active">Active</string>
+    <string name="pref_nmea0183playerdatasource_active_summary">Summary</string>
+
+    <string name="pref_title_nmea0183playerdatasource_filename">File Name</string>
+    <string name="pref_key_nmea0183playerdatasource_filename">nmeaplayerdatasource_filename</string>
+    <string name="pref_default_nmea0183playerdatasource_filename">demo.nmea</string>
+
+    <string name="pref_title_nmea0183playerdatasource_millis">Refresh interval</string>
+    <integer name="pref_default_nmea0183playerdatasource_millis">250</integer>
+
+    <!-- Maps -->
+    <string name="pref_header_maps">Maps</string>
+    <string name="pref_header_tools">Tools</string>
+
+    <string name="pref_title_maps_filename">Map Name</string>
+    <string name="pref_description_maps_filename"></string>
+    <string name="pref_default_maps_filename">world.map</string>
+
+
+    <string name="pref_title_maps_download_url">URL Download maps</string>
+    <string name="pref_description_maps_download_url"></string>
+    <string name="pref_default_maps_download_url">http://download.mapsforge.org/maps/europe/</string>
+
+    <string name="pref_title_maps_download">Download</string>
+    <string name="pref_description_maps_download">Click here to download a map</string>
+
+
+    <string name="pref_title_maps_path">Storage Path</string>
+    <string name="pref_description_maps_path"></string>
+    <string name="pref_default_maps_path"></string>
+
+
+    <string name="pref_title_maps_boat">Boat</string>
+    <string name="pref_description_maps_boat"></string>
+    <bool name="pref_default_maps_boat">true</bool>
+
+
+    <string name="pref_title_maps_predictor">Predictor</string>
+    <string name="pref_description_maps_predictor"></string>
+    <integer name="pref_default_maps_predictor">5</integer>
+
+
+    <string name="pref_title_maps_apparent_wind">Apperent Wind Direction/Speed</string>
+    <string name="pref_description_maps_apparent_wind"></string>
+    <bool name="pref_default_maps_apparent_wind">true</bool>
+
+
+    <string name="pref_title_maps_true_wind">True Wind Direction/Speed</string>
+    <string name="pref_description_maps_true_wind"></string>
+    <bool name="pref_default_maps_true_wind">true</bool>
+
+
+    <string name="pref_title_maps_windrose">Wind Rose</string>
+    <string name="pref_description_maps_windrose"></string>
+    <bool name="pref_default_maps_windrose">true</bool>
+
+
+    <string name="pref_title_maps_speed">Boat Speed</string>
+    <string name="pref_description_maps_speed"></string>
+    <bool name="pref_default_maps_speed">true</bool>
+
+
+    <string name="pref_title_maps_heading">Boat Heading</string>
+    <string name="pref_description_maps_heading"></string>
+    <bool name="pref_default_maps_heading">true</bool>
+
+
+    <string name="pref_title_maps_track">Track</string>
+    <string name="pref_description_maps_track"></string>
+    <bool name="pref_default_maps_track">true</bool>
+
+
+
+
+
+    <!-- Bluetooth -->
+    <string name="pref_header_nmea0183bluetooth">Bluetooth</string>
+    <string name="pref_default_nmea0183bluetooth_active">false</string>
+    <string name="perf_title_nmea0183bluetooth_active">Active</string>
+    <string name="perf_title_nmea0183bluetooth_paire_device">Paire device</string>
+    <string name="perf_title_nmea0183bluetooth_device_connected">Device connected:</string>
+    <string name="perf_default_nmea0183bluetooth_paire_device"></string>
+    <string name="perf_default_nmea0183bluetooth_device_connected"></string>
+    <bool name="pref_default_nmea0183bluetooth_isinput">false</bool>
+    <string name="perf_title_nmea0183bluetooth_isinput">Is input</string>
+    <bool name="pref_default_nmea0183bluetooth_isoutput">true</bool>
+    <string name="perf_title_nmea0183bluetooth_isoutput">Is output</string>
+
+
+    <string name="pref_header_applications">Applications</string>
+
+    <string-array name="pref_apps_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_bool_value">
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+    </string-array>
+
+    <string name="pref_header_mocklocations">Mocking locations</string>
+    <string name="perf_title_mocklocations_active">Active</string>
+    <string name="pref_servant_mocklocations_summary">Summary</string>
+    <bool name="pref_default_mocklocations_active">false</bool>
+
+    <string name="pref_title_mocklocations_providername">Name</string>
+    <string-array name="pref_mocklocations_providername_titles">
+        <item>Internal GPS mocking</item>
+        <item>FairWind Mock GPS</item>
+    </string-array>
+
+    <string-array name="pref_mocklocations_providername_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <bool name="pref_default_mocklocations_isinput">false</bool>
+    <string name="perf_title_mocklocations_isinput">Is input</string>
+
+    <!-- -->
+
+    <string name="pref_header_internallocations">Internal locations</string>
+    <string name="perf_title_internallocations_active">Active</string>
+    <string name="pref_servant_internallocations_summary">Summary</string>
+    <bool name="pref_default_internallocations_active">false</bool>
+
+    <!-- -->
+
+    <string name="pref_header_meta">Meta</string>
+    <string name="perf_title_alarms_active">Active</string>
+    <bool name="pref_default_alarms_active">true</bool>
+    <bool name="pref_default_alarms_isinput">false</bool>
+    <string name="perf_title_alarms_isinput">Is input</string>
+
+    <!-- -->
+
+    <string name="pref_header_logger">Logger</string>
+    <string name="perf_title_logger_active">Active</string>
+    <bool name="pref_default_logger_active">false</bool>
+
+
+    <!-- -->
+
+</resources>

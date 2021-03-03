@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="it.uniparthenope.fairwind">
+
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <uses-permission android:name="android.permission.permRead" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <permission android:name="android.hardware.usb.host" />
+    <permission android:name="android.permission.REBOOT"/>
+
+    <uses-permission android:name="it.uniparthenope.fairwind.provider.FairWindContentProvider.permRead" />
+
+    <permission
+        android:name="it.uniparthenope.fairwind.provider.FairWindContentProvider.permRead"
+        android:description="@string/permission_desc"
+        android:label="@string/permission_label"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name=".FairWindApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FairWind"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:persistent="true"
+
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+
+        <activity
+            android:name=".captain.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".captain.SplashActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".captain.setup.SetupActivity"
+            android:label="@string/title_activity_setup"
+            android:parentActivityName=".captain.HomeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/SetupTheme" android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".captain.HomeActivity" />
+
+            <intent-filter>
+                <action android:name="it.uniparthenope.fairwind.SETUP_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".captain.PermissionsActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".captain.info.InfoActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="it.uniparthenope.fairwind.INFO_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <service
+            android:name=".services.LookoutService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </service>
+
+        <service
+            android:name=".services.WatchDogService"
+            android:exported="false">
+        </service>
+
+        <provider
+            android:name=".provider.FairWindContentProvider"
+            android:authorities="it.uniparthenope.fairwind"
+            android:enabled="true"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:readPermission="it.uniparthenope.fairwind.provider.FairWindContentProvider.permRead" />
+
+
+
+        <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList" />
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PositionView">
+        <attr name="coords" />
+    </declare-styleable>
+
+    <attr name="coords" >
+        <enum name="DD" value="1"/>
+        <enum name="DDMM" value="2"/>
+        <enum name="DDMMSS" value="3"/>
+    </attr>
+</resources>

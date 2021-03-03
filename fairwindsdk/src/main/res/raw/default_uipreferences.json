@@ -1,0 +1,491 @@
+{
+  "154714fd-6e12-4929-a6a9-ff3b33c5406d": {
+    "uuid": "154714fd-6e12-4929-a6a9-ff3b33c5406d",
+    "name": "Home",
+    "default":true,
+    "home": {
+      "action": "screen:154714fd-6e12-4929-a6a9-ff3b33c5406d",
+      "drawableName": "imagebutton_home"
+    },
+    "top": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16a",
+        "drawableName": "imagebutton_alarms"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16d",
+        "drawableName": "imagebutton_mydata"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16c",
+        "drawableName": "imagebutton_boat"
+      },
+      {
+        "action": "activity:it.uniparthenope.fairwind.captain.setup.SetupActivity",
+        "drawableName": "imagebutton_setup"
+      }
+    ],
+    "info": {
+      "action": "activity:it.uniparthenope.fairwind.captain.info.InfoActivity",
+      "drawableName": "imagebutton_info"
+    },
+    "bottom": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16e",
+        "drawableName": "imagebutton_noplot"
+      },
+      {
+        "action": "screen:48409c51-1118-4e32-802b-f00abbdbfd5c",
+        "drawableName": "imagebutton_ais"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onStopAlarms",
+        "drawableName": "imagebutton_noalarm"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16b",
+        "drawableName": "imagebutton_anchor"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onCreateWaypoint",
+        "drawableName": "imagebutton_gpsfix"
+      }
+    ],
+    "pages": [
+      {
+        "name": "Home Apps",
+        "className": "it.uniparthenope.fairwind.captain.apps.HomeAppsFragment",
+        "enabled": true
+      },
+      {
+        "name": "Boat Apps",
+        "className": "it.uniparthenope.fairwind.captain.apps.BoatAppsFragment",
+        "enabled": true
+      },
+      {
+        "name": "Marine Apps",
+        "className": "it.uniparthenope.fairwind.captain.apps.MarineAppsFragment",
+        "enabled": true
+      },
+      {
+        "name": "All Apps",
+        "className": "it.uniparthenope.fairwind.captain.apps.AllAppsFragment",
+        "enabled": true
+      }
+    ]
+  },
+  "48409c51-1118-4e32-802b-f00abbdbfd5c": {
+    "uuid": "48409c51-1118-4e32-802b-f00abbdbfd5c",
+    "name": "AIS",
+    "home": {
+      "action": "screen:154714fd-6e12-4929-a6a9-ff3b33c5406d",
+      "drawableName": "imagebutton_home"
+    },
+    "top": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16a",
+        "drawableName": "imagebutton_alarms"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16d",
+        "drawableName": "imagebutton_mydata"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16c",
+        "drawableName": "boat"
+      },
+      {
+        "action": "activity:it.uniparthenope.fairwind.captain.setup.SetupActivity",
+        "drawableName": "imagebutton_setup"
+      }
+    ],
+    "info": {
+      "action": "activity:it.uniparthenope.fairwind.captain.info.InfoActivity",
+      "drawableName": "imagebutton_info"
+    },
+    "bottom": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16e",
+        "drawableName": "imagebutton_noplot"
+      },
+      {
+        "action": "screen:48409c51-1118-4e32-802b-f00abbdbfd5c",
+        "drawableName": "imagebutton_ais"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onStopAlarms",
+        "drawableName": "imagebutton_noalarm"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16b",
+        "drawableName": "imagebutton_anchor"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onCreateWaypoint",
+        "drawableName": "imagebutton_gpsfix"
+      }
+    ],
+    "pages": [
+      {
+        "name": "AIS List",
+        "className": "it.uniparthenope.fairwind.captain.ais.AISListFragment",
+        "enabled": true
+      }
+    ]
+  },
+  "fe887927-175f-41be-9417-918696d8d16a": {
+    "uuid": "fe887927-175f-41be-9417-918696d8d16a",
+    "name": "Alarms",
+    "home": {
+      "action": "screen:154714fd-6e12-4929-a6a9-ff3b33c5406d",
+      "drawableName": "imagebutton_home"
+    },
+    "top": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16a",
+        "drawableName": "imagebutton_alarms"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16d",
+        "drawableName": "imagebutton_mydata"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16c",
+        "drawableName": "imagebutton_boat"
+      },
+      {
+        "action": "activity:it.uniparthenope.fairwind.captain.setup.SetupActivity",
+        "drawableName": "imagebutton_setup"
+      }
+    ],
+    "info": {
+      "action": "activity:it.uniparthenope.fairwind.captain.info.InfoActivity",
+      "drawableName": "imagebutton_info"
+    },
+    "bottom": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16e",
+        "drawableName": "imagebutton_noplot"
+      },
+      {
+        "action": "screen:48409c51-1118-4e32-802b-f00abbdbfd5c",
+        "drawableName": "imagebutton_ais"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onStopAlarms",
+        "drawableName": "imagebutton_noalarm"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16b",
+        "drawableName": "imagebutton_anchor"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onCreateWaypoint",
+        "drawableName": "imagebutton_gpsfix"
+      }
+    ],
+    "pages": [
+      {
+        "name": "Alarms List",
+        "className": "it.uniparthenope.fairwind.captain.alarms.AlarmsListFragment",
+        "enabled": true
+      }
+    ]
+  },
+  "fe887927-175f-41be-9417-918696d8d16b": {
+    "uuid": "fe887927-175f-41be-9417-918696d8d16b",
+    "name": "Anchor",
+    "home": {
+      "action": "screen:154714fd-6e12-4929-a6a9-ff3b33c5406d",
+      "drawableName": "imagebutton_home"
+    },
+    "top": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16a",
+        "drawableName": "imagebutton_alarms"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16d",
+        "drawableName": "imagebutton_mydata"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16c",
+        "drawableName": "imagebutton_boat"
+      },
+      {
+        "action": "activity:it.uniparthenope.fairwind.captain.setup.SetupActivity",
+        "drawableName": "imagebutton_setup"
+      }
+    ],
+    "info": {
+      "action": "activity:it.uniparthenope.fairwind.captain.info.InfoActivity",
+      "drawableName": "imagebutton_info"
+    },
+    "bottom": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16e",
+        "drawableName": "imagebutton_noplot"
+      },
+      {
+        "action": "screen:48409c51-1118-4e32-802b-f00abbdbfd5c",
+        "drawableName": "imagebutton_ais"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onStopAlarms",
+        "drawableName": "imagebutton_noalarm"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16b",
+        "drawableName": "imagebutton_anchor"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onCreateWaypoint",
+        "drawableName": "imagebutton_gpsfix"
+      }
+    ],
+    "pages": [
+      {
+        "name": "Anchor",
+        "className": "it.uniparthenope.fairwind.captain.anchor.AnchorFragment",
+        "enabled": true
+      }
+    ]
+  },
+  "fe887927-175f-41be-9417-918696d8d16c": {
+    "uuid": "fe887927-175f-41be-9417-918696d8d16c",
+    "name": "Boat",
+    "home": {
+      "action": "screen:154714fd-6e12-4929-a6a9-ff3b33c5406d",
+      "drawableName": "imagebutton_home"
+    },
+    "top": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16a",
+        "drawableName": "imagebutton_alarms"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16d",
+        "drawableName": "imagebutton_mydata"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16c",
+        "drawableName": "imagebutton_boat"
+      },
+      {
+        "action": "activity:it.uniparthenope.fairwind.captain.setup.SetupActivity",
+        "drawableName": "imagebutton_setup"
+      }
+    ],
+    "info": {
+      "action": "activity:it.uniparthenope.fairwind.captain.info.InfoActivity",
+      "drawableName": "imagebutton_info"
+    },
+    "bottom": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16e",
+        "drawableName": "imagebutton_noplot"
+      },
+      {
+        "action": "screen:48409c51-1118-4e32-802b-f00abbdbfd5c",
+        "drawableName": "imagebutton_ais"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onStopAlarms",
+        "drawableName": "imagebutton_noalarm"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16b",
+        "drawableName": "imagebutton_anchor"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onCreateWaypoint",
+        "drawableName": "imagebutton_gpsfix"
+      }
+    ],
+    "pages": [
+      {
+        "name": "Navigation",
+        "className": "it.uniparthenope.fairwind.captain.boat.NavigationFragment",
+        "enabled": true
+      },
+      {
+        "name": "Sailing",
+        "className": "it.uniparthenope.fairwind.captain.boat.SailingFragment",
+        "enabled": true
+      },
+      {
+        "name": "Engine",
+        "className": "it.uniparthenope.fairwind.captain.boat.EngineFragment",
+        "enabled": false
+      },
+      {
+        "name": "Fuel",
+        "className": "it.uniparthenope.fairwind.captain.boat.FuelFragment",
+        "enabled": false
+      },
+      {
+        "name": "Evironment",
+        "className": "it.uniparthenope.fairwind.captain.boat.EnvironmentFragment",
+        "enabled": true
+      },
+      {
+        "name": "Fishing",
+        "className": "it.uniparthenope.fairwind.captain.boat.FishingFragment",
+        "enabled": true
+      },
+      {
+        "name": "Rolling Road",
+        "className": "it.uniparthenope.fairwind.captain.boat.RollingRoadFragment",
+        "enabled": true
+      },
+      {
+        "name": "Depth",
+        "className": "it.uniparthenope.fairwind.captain.boat.DepthFragment",
+        "enabled": true
+      }
+    ]
+  },
+  "fe887927-175f-41be-9417-918696d8d16d": {
+    "uuid": "fe887927-175f-41be-9417-918696d8d16d",
+    "name": "My Data",
+    "home": {
+      "action": "screen:154714fd-6e12-4929-a6a9-ff3b33c5406d",
+      "drawableName": "imagebutton_home"
+    },
+    "top": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16a",
+        "drawableName": "imagebutton_alarms"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16d",
+        "drawableName": "imagebutton_mydata"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16c",
+        "drawableName": "imagebutton_boat"
+      },
+      {
+        "action": "activity:it.uniparthenope.fairwind.captain.setup.SetupActivity",
+        "drawableName": "imagebutton_setup"
+      }
+    ],
+    "info": {
+      "action": "activity:it.uniparthenope.fairwind.captain.info.InfoActivity",
+      "drawableName": "imagebutton_info"
+    },
+    "bottom": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16e",
+        "drawableName": "imagebutton_noplot"
+      },
+      {
+        "action": "screen:48409c51-1118-4e32-802b-f00abbdbfd5c",
+        "drawableName": "imagebutton_ais"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onStopAlarms",
+        "drawableName": "imagebutton_noalarm"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16b",
+        "drawableName": "imagebutton_anchor"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onCreateWaypoint",
+        "drawableName": "imagebutton_gpsfix"
+      }
+    ],
+    "pages": [
+      {
+        "name": "Waypoints",
+        "className": "it.uniparthenope.fairwind.captain.mydata.WaypointsFragment",
+        "enabled": true
+      },
+      {
+        "name": "Routes",
+        "className": "it.uniparthenope.fairwind.captain.mydata.RoutesFragment",
+        "enabled": true
+      },
+      {
+        "name": "Tracks",
+        "className": "it.uniparthenope.fairwind.captain.mydata.TracksFragment",
+        "enabled": true
+      },
+      {
+        "name": "Files",
+        "className": "it.uniparthenope.fairwind.captain.mydata.FilesFragment",
+        "enabled": true
+      },
+      {
+        "name": "SignalK",
+        "className": "it.uniparthenope.fairwind.captain.mydata.SignalKFragment",
+        "enabled": true
+      },
+      {
+        "name": "NMEA0183",
+        "className": "it.uniparthenope.fairwind.captain.mydata.NMEA0183Fragment",
+        "enabled": true
+      }
+    ]
+  },
+  "fe887927-175f-41be-9417-918696d8d16e": {
+    "uuid": "fe887927-175f-41be-9417-918696d8d16e",
+    "name": "Maps",
+    "home": {
+      "action": "screen:154714fd-6e12-4929-a6a9-ff3b33c5406d",
+      "drawableName": "imagebutton_home"
+    },
+    "top": [
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16a",
+        "drawableName": "imagebutton_alarms"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16d",
+        "drawableName": "imagebutton_mydata"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16c",
+        "drawableName": "imagebutton_boat"
+      },
+      {
+        "action": "activity:it.uniparthenope.fairwind.captain.setup.SetupActivity",
+        "drawableName": "imagebutton_setup"
+      }
+    ],
+    "info": {
+      "action": "activity:it.uniparthenope.fairwind.captain.info.InfoActivity",
+      "drawableName": "imagebutton_info"
+    },
+    "bottom": [
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.maps.MapsFragment.onFindVessel",
+        "drawableName": "imagebutton_findvessel_512x512"
+      },
+      {
+        "action": "screen:48409c51-1118-4e32-802b-f00abbdbfd5c",
+        "drawableName": "imagebutton_ais"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onStopAlarms",
+        "drawableName": "imagebutton_noalarm"
+      },
+      {
+        "action": "screen:fe887927-175f-41be-9417-918696d8d16b",
+        "drawableName": "imagebutton_anchor"
+      },
+      {
+        "action": "invoke:it.uniparthenope.fairwind.captain.HomeActivity.onCreateWaypoint",
+        "drawableName": "imagebutton_gpsfix"
+      }
+    ],
+    "pages": [
+      {
+        "name": "Maps",
+        "className": "it.uniparthenope.fairwind.captain.maps.MapsFragment",
+        "enabled": true
+      }
+    ]
+  }
+}

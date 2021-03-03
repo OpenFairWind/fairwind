@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txt_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <RadioButton
+        android:id="@+id/radio_urnmrnimommsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="urn:mrn:imo:mmsi" />
+
+    <RadioButton
+        android:id="@+id/radio_urnmrnsignalkuuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="urn:mrn:signalk:uuid" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="36">
+
+            <EditText
+                android:id="@+id/edit_uuid_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:digits="8"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="8"
+                android:gravity="center"
+                android:text="00000000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edit_uuid_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:digits="4"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="4"
+                android:gravity="center"
+                android:text="0000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edit_uuid_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:digits="4"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="4"
+                android:gravity="center"
+                android:text="0000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edit_uuid_d"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:digits="4"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="4"
+                android:gravity="center"
+                android:text="0000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edit_uuid_e"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:digits="12"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="12"
+                android:gravity="center"
+                android:text="000000000000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_random"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Random" android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/radio_urnmrn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="urn:mrn" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="9"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="54">
+
+        <EditText
+            android:id="@+id/edit_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:digits="8"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="8"
+            android:gravity="center"
+            android:text="fairwind" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=":" />
+
+        <EditText
+            android:id="@+id/edit_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:digits="8"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="8"
+            android:gravity="center"
+            android:text="uuid" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=":" />
+
+        <EditText
+            android:id="@+id/edit_uuid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="36"
+            android:digits="36"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="36"
+            android:gravity="center"
+            android:text="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" />
+    </LinearLayout>
+
+
+</LinearLayout>

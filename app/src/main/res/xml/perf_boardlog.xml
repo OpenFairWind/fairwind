@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_key_boardlog_nmea_active"
+        android:title="@string/perf_title_boardlog_nmeaactive"
+        android:defaultValue="@string/pref_default_boardlog_nmeaactive" />
+
+
+    <Preference
+        android:title="NMEA Log Path selected:"
+        android:key="pref_key_boardlog_nmea_path"
+        />
+
+
+    <CheckBoxPreference
+        android:key="pref_key_boardlog_depth_active"
+        android:title="@string/perf_title_boardlog_depthactive"
+        android:defaultValue="@string/pref_default_boardlog_depthactive" />
+
+    <Preference
+        android:title="Depth Log Path selected:"
+        android:key="pref_key_boardlog_depth_path"
+        />
+
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,68 @@
+{
+  "5458590-dc8c-11e6-bf26-cec0c932ce01": {
+    "uuid":"35458590-dc8c-11e6-bf26-cec0c932ce01",
+    "fileName": "/sdcard/Android/data/it.uniparthenope.fairwind/files/nmea/fairwind/Sarima_V-20150823.nmea",
+    "isInput": true,
+    "isOutput": false,
+    "name": "NMEA0183 Player",
+    "className": "it.uniparthenope.fairwind.services.file.NMEA0183Player",
+    "millis": 500,
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "Playback a NMEA0183 log file"
+  },
+  "4ee000c0-dc8c-11e6-bf26-cec0c932ce01": {
+    "uuid":"4ee000c0-dc8c-11e6-bf26-cec0c932ce01",
+    "isInput": false,
+    "isOutput": true,
+    "name": "SignalK Tcp/Ip Server",
+    "className": "it.uniparthenope.fairwind.services.tcpipserver.SignalkTcpIpServer",
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "Serve SignalK data over Tcp/Ip as a server"
+  },
+  "578c4490-dc8c-11e6-bf26-cec0c932ce01": {
+    "uuid":"578c4490-dc8c-11e6-bf26-cec0c932ce01",
+    "isInput": false,
+    "isOutput": true,
+    "portWebSocket": 3000,
+    "name": "Web Server",
+    "className": "it.uniparthenope.fairwind.services.web.WebServer",
+    "portWebService": 8080,
+    "wwwDocumentRoot": "/sdcard/Android/data/it.uniparthenope.fairwind/files/www/",
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "Manage the local web server, services and SignalK web socket server"
+  },
+  "6e64202a-dc8c-11e6-bf26-cec0c932ce01": {
+    "uuid":"6e64202a-dc8c-11e6-bf26-cec0c932ce01",
+    "isInput": false,
+    "isOutput": true,
+    "name": "NMEA0183 Tcp/Ip Server (Only Input)",
+    "className": "it.uniparthenope.fairwind.services.tcpipserver.NMEA0183TcpIpServer",
+    "serverPort": 10110,
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "Ingest NMEA sentences from Tcp/Ip Server"
+  },
+  "7a47d468-dc8c-11e6-bf26-cec0c932ce01": {
+    "uuid":"7a47d468-dc8c-11e6-bf26-cec0c932ce01",
+    "isInput": true,
+    "isOutput": false,
+    "name": "Internal Locations",
+    "className": "it.uniparthenope.fairwind.services.internallocations.InternalLocationsListener",
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "Use internal GPS as main position provider"
+  },
+  "859dd2ea-dc8c-11e6-bf26-cec0c932ce01": {
+    "uuid":"859dd2ea-dc8c-11e6-bf26-cec0c932ce01",
+    "isInput": false,
+    "isOutput": false,
+    "name": "Mock Locations",
+    "className": "it.uniparthenope.fairwind.services.mocklocations.MockLocationsListener",
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "Publish positin data as Android location services"
+  }
+}

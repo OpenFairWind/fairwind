@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183tcpipserver_active"
+        android:title="@string/perf_title_nmea0183tcpipserver_active"
+        android:defaultValue="@bool/pref_default_nmea0183tcpipserver_active" />
+
+    <EditTextPreference
+        android:key="pref_key_nmea0183tcpipserver_port"
+        android:title="@string/pref_title_nmea0183tcpipserver_port"
+        android:defaultValue="@integer/pref_default_nmea0183tcpipserver_port"
+        android:selectAllOnFocus="true"
+        android:inputType="numberDecimal" />
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183tcpipserver_isinput"
+        android:title="@string/perf_title_nmea0183tcpipserver_isinput"
+        android:defaultValue="@bool/pref_default_nmea0183tcpipserver_isinput" />
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183tcpipserver_isoutput"
+        android:title="@string/perf_title_nmea0183tcpipserver_isoutput"
+        android:defaultValue="@bool/pref_default_nmea0183tcpipserver_isoutput" />
+
+</PreferenceScreen>

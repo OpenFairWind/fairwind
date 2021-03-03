@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TankView">
+        <attr name="tank_id"  />
+        <attr name="vessel_uuid"  />
+    </declare-styleable>
+
+    <attr name="tank_id"  format="string"/>
+</resources>

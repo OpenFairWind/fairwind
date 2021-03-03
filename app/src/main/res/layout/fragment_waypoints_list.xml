@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SingleDataView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#c3c3e3"
+    tools:context=".captain.mydata.WaypointsFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="12">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Name"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Brg &amp; Rng"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Lat/Lon"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Date &amp; Time"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/list_waypoints"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                tools:listitem="@layout/fragment_waypoints_item" />
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <it.uniparthenope.fairwind.sdk.ui.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:gravity="top|fill_vertical"
+
+                android:orientation="horizontal"
+                SingleDataView:mode="text"
+                SingleDataView:vessel_uuid="self"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_column="0" android:layout_row="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sort by" />
+
+                    <Spinner
+                        android:id="@+id/spinner_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="top|fill_vertical|fill_horizontal|start"
+
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/waypoints_sortby" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_column="1" android:layout_row="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order" />
+
+                    <Spinner
+                        android:id="@+id/spinner_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="top|fill_vertical|fill_horizontal|start"
+
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/waypoints_sortorder" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_new_waypoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="top|fill_vertical|fill_horizontal|start|end"
+                    android:layout_row="1"
+                    android:text="New Waypoint" />
+
+                <Button
+                    android:id="@+id/btn_new_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="top|fill_vertical|fill_horizontal|start|end"
+                    android:layout_row="1"
+                    android:text="New Group" />
+
+                <Button
+                    android:id="@+id/btn_import"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="bottom|fill_horizontal|start"
+                    android:layout_row="2"
+                    android:text="Import" />
+
+                <Button
+                    android:id="@+id/btn_export"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="bottom|fill_horizontal|end"
+                    android:layout_row="2"
+                    android:text="Export" />
+            </GridLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

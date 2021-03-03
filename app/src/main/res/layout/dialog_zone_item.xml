@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="?listPreferredItemHeight"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_gravity="center_vertical" android:weightSum="15">
+
+        <EditText
+            android:id="@+id/item_lower"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <TextView
+            android:id="@+id/item_lower_units"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="">
+        </TextView>
+
+        <EditText
+            android:id="@+id/item_upper"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <TextView
+            android:id="@+id/item_upper_units"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/item_state"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:entries="@array/meta_zone_state_array"
+            android:prompt="@string/meta_zone_state_prompt" >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/item_message"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:inputType="textShortMessage">
+        </EditText>
+
+        <ImageView
+            android:id="@+id/handle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_reorder_grey_500_24dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

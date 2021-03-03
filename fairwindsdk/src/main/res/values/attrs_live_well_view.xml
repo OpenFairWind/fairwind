@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LiveWellView">
+        <attr format="float" name="minLiveWell" />
+        <attr format="float" name="maxLiveWell" />
+    </declare-styleable>
+</resources>

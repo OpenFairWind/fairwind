@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FairWindSDK</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="boat_latitude">Latitude</string>
+    <string name="boat_longitude">Longitude</string>
+    <string name="boat_wptname">Waypoint</string>
+    <string name="boat_wptinfo">Info</string>
+    <string name="boat_depth">Depth</string>
+    <string name="boat_fuel">Total Fuel</string>
+    <string name="boat_heading">Heading</string>
+    <string name="boat_speed">Boat Speed</string>
+    <string name="boat_cog">COG</string>
+    <string name="boat_sog">SOG</string>
+    <string name="boat_bearing">Bearing</string>
+    <string name="boat_vmg">VMG</string>
+    <string name="boat_time">Time</string>
+    <string name="boat_compass">Compass</string>
+    <string name="boat_angle">Angle</string>
+    <string name="boat_position">Position</string>
+    <string name="boat_crs">CRS</string>
+    <string name="boat_brg">BRG</string>
+</resources>

@@ -1,0 +1,58 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183serialdatasource_active"
+        android:title="@string/perf_title_nmea0183serialdatasource_active"
+        android:defaultValue="@bool/pref_default_nmea0183serialdatasource_active" />
+
+    <ListPreference
+        android:key="pref_key_nmea0183serialdatasource_baudrate"
+        android:title="@string/pref_title_nmea0183serialdatasource_baudrate"
+        android:entries="@array/pref_nmea0183serialdatasource_baudrate_titles"
+        android:entryValues="@array/pref_nmea0183serialdatasource_baudate_values"
+        android:defaultValue="@string/pref_default_nmea0183serialdatasource_baudrate"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:key="pref_key_nmea0183serialdatasource_databits"
+        android:title="@string/pref_title_nmea0183serialdatasource_databits"
+        android:entries="@array/pref_nmea0183serialdatasource_databits_titles"
+        android:entryValues="@array/pref_nmea0183serialdatasource_databits_values"
+        android:defaultValue="@string/pref_default_nmea0183serialdatasource_databits"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:key="pref_key_nmea0183serialdatasource_paritybit"
+        android:title="@string/pref_title_nmea0183serialdatasource_paritybit"
+        android:entries="@array/pref_nmea0183serialdatasource_paritybit_titles"
+        android:entryValues="@array/pref_nmea0183serialdatasource_paritybit_values"
+        android:defaultValue="@string/pref_default_nmea0183serialdatasource_paritybit"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:key="pref_key_nmea0183serialdatasource_stopbits"
+        android:title="@string/pref_title_nmea0183serialdatasource_stopbits"
+        android:entries="@array/pref_nmea0183serialdatasource_stopbits_titles"
+        android:entryValues="@array/pref_nmea0183serialdatasource_stopbits_values"
+        android:defaultValue="@string/pref_default_nmea0183serialdatasource_stopbits"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183serialdatasource_isinput"
+        android:title="@string/perf_title_nmea0183serialdatasource_isinput"
+        android:defaultValue="@bool/pref_default_nmea0183serialdatasource_isinput" />
+
+    <CheckBoxPreference
+        android:key="pref_key_nmea0183serialdatasource_isoutput"
+        android:title="@string/perf_title_nmea0183serialdatasource_isoutput"
+        android:defaultValue="@bool/pref_default_nmea0183serialdatasource_isoutput" />
+
+</PreferenceScreen>

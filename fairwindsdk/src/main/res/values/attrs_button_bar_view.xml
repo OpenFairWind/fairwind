@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonBarView">
+        <attr name="home_action" format="string" />
+        <attr name="btn1_action" format="string" />
+        <attr name="btn2_action" format="string" />
+        <attr name="btn3_action" format="string" />
+        <attr name="btn4_action" format="string" />
+        <attr name="btn5_action" format="string" />
+        <attr name="info_action" format="string" />
+        <attr name="home_icon" format="integer" />
+        <attr name="btn1_icon" format="integer" />
+        <attr name="btn2_icon" format="integer" />
+        <attr name="btn3_icon" format="integer" />
+        <attr name="btn4_icon" format="integer" />
+        <attr name="btn5_icon" format="integer" />
+        <attr name="info_icon" format="integer" />
+    </declare-styleable>
+</resources>

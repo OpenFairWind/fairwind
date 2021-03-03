@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="servant_active"
+        android:title="@string/perf_title_servant_active"
+        android:defaultValue="@bool/pref_default_servant_active" />
+
+    <ListPreference
+        android:key="servant_port1type"
+        android:title="@string/pref_title_servant_port1type"
+        android:entries="@array/pref_servant_port1type_titles"
+        android:entryValues="@array/pref_servant_port1type_values"
+        android:defaultValue="none"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <EditTextPreference
+        android:key="servant_port1label"
+        android:title="@string/pref_title_servant_port1label"
+        android:defaultValue="@string/pref_default_servant_port1label"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" android:maxLength="7"/>
+
+    <ListPreference
+        android:key="servant_port2type"
+        android:title="@string/pref_title_servant_port2type"
+        android:entries="@array/pref_servant_port2type_titles"
+        android:entryValues="@array/pref_servant_port2type_values"
+        android:defaultValue="none"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <EditTextPreference
+        android:key="servant_port2label"
+        android:title="@string/pref_title_servant_port2label"
+        android:defaultValue="@string/pref_default_servant_port2label"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" android:maxLength="7"/>
+
+</PreferenceScreen>

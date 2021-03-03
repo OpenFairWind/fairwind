@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="gaugeRPM" >
+        <item name="outerCircleColor">#001a5bff</item>
+        <item name="innerCircleColor">#001a5bff</item>
+        <item name="showOuterShadow">false</item>
+        <item name="showOuterRim">false</item>
+        <item name="showInnerRim">false</item>
+        <item name="needleWidth">0.010</item>
+        <item name="needleHeight">0.40</item>
+        <item name="showTexts">true</item>
+        <item name="textValue">RPM x1000</item>
+        <item name="textValueSize">0.07</item>
+        <item name="scaleStartValue">0</item>
+        <item name="scaleEndValue">5</item>
+        <item name="scaleStartAngle">60</item>
+        <item name="textNumberColor">#ffffff</item>
+        <item name="showRanges">true</item>
+        <item name="divisions">5</item>
+        <item name="subdivisions">2</item>
+        <item name="needleColor">#ff0000</item>
+        <item name="textNumberSize">0.08</item>
+    </style>
+    <style name="gaugeOil">
+        <item name="outerCircleColor">#001a7bff</item>
+        <item name="innerCircleColor">#001a7bff</item>
+        <item name="showOuterShadow">false</item>
+        <item name="showOuterRim">false</item>
+        <item name="showInnerRim">false</item>
+        <item name="needleWidth">0.010</item>
+        <item name="needleHeight">0.40</item>
+        <item name="showTexts">true</item>
+        <item name="textValue">PSI</item>
+        <item name="textValueSize">0.11</item>
+        <item name="scaleStartValue">0</item>
+        <item name="scaleEndValue">100</item>
+        <item name="scaleStartAngle">60</item>
+        <item name="textNumberColor">#ffffff</item>
+        <item name="showRanges">true</item>
+        <item name="divisions">3</item>
+        <item name="subdivisions">2</item>
+        <item name="needleColor">#ff0000</item>
+        <item name="textNumberSize">0.08</item>
+    </style>
+    <style name="gaugeCoolant">
+        <item name="outerCircleColor">#001a7bff</item>
+        <item name="innerCircleColor">#001a7bff</item>
+        <item name="showOuterShadow">false</item>
+        <item name="showOuterRim">false</item>
+        <item name="showInnerRim">false</item>
+        <item name="needleWidth">0.010</item>
+        <item name="needleHeight">0.40</item>
+        <item name="showTexts">true</item>
+        <item name="textValue">F</item>
+        <item name="textValueSize">0.11</item>
+        <item name="scaleStartValue">0</item>
+        <item name="scaleEndValue">300</item>
+        <item name="scaleStartAngle">60</item>
+        <item name="textNumberColor">#ffffff</item>
+        <item name="showRanges">true</item>
+        <item name="divisions">3</item>
+        <item name="subdivisions">2</item>
+        <item name="needleColor">#ff0000</item>
+        <item name="textNumberSize">0.08</item>
+    </style>
+
+</resources>

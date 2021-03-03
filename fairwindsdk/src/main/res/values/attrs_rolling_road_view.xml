@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="RollingRoadView">
+        <attr name="rollingroadview_hdg" format="float" />
+        <attr name="rollingroadview_brg" format="float" />
+        <attr name="rollingroadview_xte" format="float" />
+        <attr name="rollingroadview_speed" format="float" />
+        <attr name="rollingroadview_depth" format="float" />
+    </declare-styleable>
+</resources>

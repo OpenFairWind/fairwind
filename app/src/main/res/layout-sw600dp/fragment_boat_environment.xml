@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:SingleDataView="http://schemas.android.com/apk/res-auto"
+    xmlns:CompassSpeedView="http://schemas.android.com/apk/res-auto"
+    xmlns:AirTemperatureView="http://schemas.android.com/apk/res-auto"
+    xmlns:HumidityView="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#000000">
+
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindDirectionSpeedView
+            android:id="@+id/twdsView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            CompassSpeedView:wind="overground"
+            CompassSpeedView:compass="geographic"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.AirPressureView
+            android:id="@+id/airPressureView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.TheoreticalWindChillTemperatureView
+            android:id="@+id/twchillView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"/>
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WindDirectionSpeedView
+            android:id="@+id/awdsView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            CompassSpeedView:wind="apparent"
+            CompassSpeedView:compass="geographic"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#000000">
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.SetDriftView
+            android:id="@+id/setdriftView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            CompassSpeedView:compass="geographic"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"/>
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.WaterTemperatureView
+            android:id="@+id/watertempView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"
+            />
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.AirTemperatureView
+            android:id="@+id/airtempView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            AirTemperatureView:internal="false"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"/>
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.HumidityView
+            android:id="@+id/humidityView"
+            android:orientation="horizontal"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+
+            HumidityView:internal="true"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="text"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

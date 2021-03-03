@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:SingleDataView="http://schemas.android.com/apk/res-auto"
+    xmlns:RPMView="http://schemas.android.com/apk/res-auto"
+    tools:context="it.uniparthenope.fairwind.sdk.ui.EngineView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#000000">
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.CoolantTemperatureView
+            android:id="@+id/coolantTemperatureView"
+            android:orientation="horizontal"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="gauge"
+            />
+
+            <it.uniparthenope.fairwind.sdk.ui.gauges.OilPressureView
+                android:id="@+id/oilPressureView"
+                android:orientation="horizontal"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+
+                SingleDataView:vessel_uuid="self"
+                SingleDataView:mode="gauge"
+                />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#000000">
+
+        <it.uniparthenope.fairwind.sdk.ui.gauges.RPMView
+            android:id="@+id/rpmeView"
+            android:orientation="horizontal"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+
+            RPMView:unit_rpm="rpmx1000"
+            SingleDataView:vessel_uuid="self"
+            SingleDataView:mode="gauge"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

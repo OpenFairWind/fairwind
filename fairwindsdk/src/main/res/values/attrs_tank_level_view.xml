@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TankLevelView">
+        <attr name="tank_id"/>
+        <attr name="tank_type" format="string"/>
+    </declare-styleable>
+
+</resources>

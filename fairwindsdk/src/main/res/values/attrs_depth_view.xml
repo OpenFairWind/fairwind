@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DepthView">
+        <attr name="unit_depth" />
+        <attr name="depth" />
+    </declare-styleable>
+
+    <attr name="unit_depth" >
+        <enum name="m" value="0"/>
+        <enum name="f" value="1"/>
+    </attr>
+
+    <attr name="depth" >
+        <!-- BELOW_KEEL,BELOW_SURFACE,BELOW_TRANSDUCER; -->
+        <enum name="keel" value="0"/>
+        <enum name="surface" value="1"/>
+        <enum name="transducer" value="2"/>
+    </attr>
+
+</resources>

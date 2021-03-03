@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WindAngleView">
+        <attr name="compass"/>
+        <attr name="wind"/>
+    </declare-styleable>
+
+    <attr name="wind" >
+        <enum name="apparent" value="0"/>
+        <enum name="real" value="1"/>
+        <enum name="overground" value="2"/>
+    </attr>
+
+</resources>

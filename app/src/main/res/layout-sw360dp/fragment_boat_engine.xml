@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:RatioView="http://schemas.android.com/apk/res-auto"
+    xmlns:SingleDataView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#000000" android:id="@+id/llc_engines">
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#000000"
+        >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#000000">
+
+            <!--
+            <it.uniparthenope.fairwind.sdk.ui.RatioView
+                android:id="@+id/totalFuelTankView"
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+
+                RatioView:datatype="total_fuel_tank"
+                RatioView:vessel_uuid="self"
+                SingleDataView:mode="text"/>
+            -->
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="90dp"
+            android:layout_height="220dp"
+            android:src="@drawable/engine"
+            android:id="@+id/cv_trimtab0" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#000000">
+<!--
+            <it.uniparthenope.fairwind.sdk.ui.BoatSpeedView
+                android:id="@+id/sogView"
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+
+                SingleDataView:vessel_uuid="self"
+                SingleDataView:mode="text"
+-->
+
+
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

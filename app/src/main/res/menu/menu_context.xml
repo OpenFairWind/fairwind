@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/open_item"
+        android:alphabeticShortcut="o"
+        android:title="@string/open" />
+
+    <item android:id="@+id/copy_item"
+        android:alphabeticShortcut="c"
+        android:title="@string/copy" />
+
+    <item android:id="@+id/rename_item"
+        android:alphabeticShortcut="r"
+        android:title="@string/rename"/>
+
+    <item android:id="@+id/share_item"
+        android:alphabeticShortcut="s"
+        android:title="@string/share" />
+
+    <item android:id="@+id/home_item"
+        android:alphabeticShortcut="p"
+        android:title="@string/home_app" />
+
+    <item android:id="@+id/marine_item"
+        android:alphabeticShortcut="p"
+        android:title="@string/marine_app" />
+
+    <item android:id="@+id/bapp_item"
+        android:alphabeticShortcut="p"
+        android:title="@string/boat_app"  />
+
+    <item android:id="@+id/remove_item"
+        android:alphabeticShortcut="p"
+        android:title="@string/remove"  />
+
+</menu>

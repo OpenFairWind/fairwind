@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:weightSum="15">
+
+        <TextView
+            android:id="@+id/item_lower"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Lower">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_lower_units"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_upper"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Upper">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_upper_units"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_state"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="State">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_message"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:text="Message">
+        </TextView>
+
+
+       <ImageButton
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_add"
+           android:id="@+id/add_zone_item"/>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list_zones"
+        android:name="it.uniparthenope.fairwind.captain.setup.preferences.meta.ZonesDialogFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context=".captain.setup.preferences.meta.preferences.ZonesDialogFragment"
+        tools:listitem="@layout/dialog_zone_item" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+{
+  "/vessels/self/propulsion/1/revolutions":{
+    "path":"/vessels/self/propulsion/1/revolutions",
+    "displayName": "Tachometer, Engine 1",
+    "shortName": "RPM",
+    "warnMethod": "visual",
+    "warnMessage": "any text",
+    "alarmMethod": "sound",
+    "alarmMessage": "any text",
+    "zones": [
+      {"lower":0.0,"upper":500,"state":"alarm", "message":"Stopped or very slow Rpm"},
+      {"lower":500,"upper":3000,"state":"normal", "message":""},
+      {"lower":3000,"upper":3500,"state":"warn", "message":"Approaching maximum rpm"},
+      {"lower":3500,"upper":9999,"state":"alarm", "message":"Exceeding maximum rpm"}
+    ]
+  },
+  "/vessels/self/environment/depth/belowTransducer":{
+    "path":"/vessels/self/environment/depth/belowTransducer",
+    "displayName": "Depth Below the Trasducer",
+    "shortName": "Depth",
+    "warnMethod": "visual",
+    "warnMessage": "any text",
+    "alarmMethod": "sound",
+    "alarmMessage": "any text",
+    "zones": [
+      {"lower":-2.5,"upper":0.0,"state":"alarm", "message":"Dangerous shallow waters"},
+      {"lower":-5.5,"upper":-2.5,"state":"warn", "message":"Shallow waters"},
+      {"lower":-20.0,"upper":-5.5,"state":"normal", "message":"Anchor zone"},
+      {"lower":-9999,"upper":-20.0,"state":"normal", "message":""}
+    ]
+  }
+}

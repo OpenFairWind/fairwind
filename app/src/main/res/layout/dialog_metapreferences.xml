@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edit_path"
+            android:text="Path"
+            android:layout_gravity="right" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_path"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            android:id="@+id/button_browse"/>
+
+        <TextView
+            android:id="@+id/txt_displayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edit_displayName"
+            android:text="Display Name"
+            android:layout_gravity="right" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/edit_displayName"
+            />
+
+        <TextView
+            android:id="@+id/txt_shortName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edit_shortName"
+            android:text="Short Name"
+            android:layout_gravity="right"  />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_shortName"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:id="@+id/txt_warnMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/spn_warnMethod"
+            android:text="Warn Method"
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spn_warnMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/meta_method_array"
+            android:prompt="@string/meta_warn_prompt" />
+
+        <TextView
+            android:id="@+id/txt_warnmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edit_warnMessage"
+            android:text="Warn Message"
+            android:layout_gravity="right" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_warnMessage"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:id="@+id/txt_alarmMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/spn_alarmMethod"
+            android:text="Alarm Method"
+            android:layout_gravity="right" />
+
+        <Spinner
+            android:id="@+id/spn_alarmMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/meta_method_array"
+            android:prompt="@string/meta_alarm_prompt" />
+
+        <TextView
+            android:id="@+id/txt_alarmMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edit_alarmMessage"
+            android:text="Alarm Message"
+            android:layout_gravity="right" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_alarmMessage"
+            android:inputType="text"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Zones"
+            android:id="@+id/button_set_zones"/>
+    </LinearLayout>
+</FrameLayout>

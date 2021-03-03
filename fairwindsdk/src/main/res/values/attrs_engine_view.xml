@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EngineView">
+        <attr name="propulsion_id"  />
+        <attr name="unit_rpm" />
+        <attr name="unit_coolant_temperature" format="string"/>
+        <attr name="unit_coolant_pressure" format="string"/>
+        <attr name="unit_oil_temperature" format="string"/>
+        <attr name="unit_oil_pressure" format="string"/>
+        <attr name="vessel_uuid"  />
+    </declare-styleable>
+
+
+</resources>

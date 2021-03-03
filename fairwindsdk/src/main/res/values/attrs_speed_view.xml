@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpeedView">
+        <attr name="unit_speed" />
+    </declare-styleable>
+
+    <attr name="speed" >
+        <enum name="sog" value="0"/>
+        <enum name="speedometer" value="1"/>
+        <enum name="vmg" value="2"/>
+        <enum name="vmg2wpt" value="3"/>
+    </attr>
+
+    <attr name="unit_speed" >
+        <enum name="ms" value="0"/>
+        <enum name="knts" value="1"/>
+        <enum name="mph" value="2"/>
+        <enum name="kh" value="3"/>
+    </attr>
+
+</resources>

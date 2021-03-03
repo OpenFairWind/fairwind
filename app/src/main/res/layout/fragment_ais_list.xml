@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#c3c3e3"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".captain.ais.AISListFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+         >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:text="Range (nm)">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ais_range_textView"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="#ffffffff"
+            android:text="20"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:textSize="24sp"
+            android:textColor="#ffffffff"
+            android:text="0nm">
+        </TextView>
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ais_range_seekBar"
+            android:layout_weight="3"
+            android:max="101"
+            android:progress="20" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:textSize="24sp"
+            android:textColor="#ffffffff"
+            android:text="100nm">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#c3c3e3"
+        android:textColor="#ffffff"
+        android:weightSum="10"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TYPE"
+            android:id="@+id/ais_type_button"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MMSI"
+            android:id="@+id/ais_mmsi_button"
+            android:layout_weight="1" />
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:id="@+id/ais_name_button"
+            android:layout_weight="3" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RANGE"
+            android:id="@+id/ais_range_button"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BEARING"
+            android:id="@+id/ais_bearing_button"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SPEED"
+            android:id="@+id/ais_sog_button"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="COURSE"
+            android:id="@+id/ais_cog_button"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list_ais"
+        android:name="it.uniparthenope.fairwind.captain.ais.AISListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ded8d8"
+        android:textColor="#ecd102"
+        tools:context=".captain.ais.AISListFragment"
+        tools:listitem="@layout/fragment_ais_item" />
+
+
+</LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.LinearLayoutCompat>

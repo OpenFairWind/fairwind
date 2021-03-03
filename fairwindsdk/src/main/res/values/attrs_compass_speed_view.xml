@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CompassSpeedView">
+        <attr name="compass"  />
+        <attr name="unit_speed" />
+    </declare-styleable>
+</resources>

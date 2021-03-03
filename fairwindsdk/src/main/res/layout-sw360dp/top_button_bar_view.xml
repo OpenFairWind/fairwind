@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="it.uniparthenope.fairwind.sdk.ui.ButtonBarView">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_topbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingBottom="0dp" >
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"   >
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_home"
+                android:src="@drawable/topbutton"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:adjustViewBounds="false"
+                android:background="@color/button_material_light"
+                android:layout_alignParentStart="true"
+                 />
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"  android:layout_centerInParent="true">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/lbl_latitude" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_position"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_latitude" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="__°&apos;__&apos;___?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_longitude" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="__°&apos;__&apos;___?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView android:id="@+id/lbl_cog" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_crs"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_cog" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="___°"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_sog" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="_.__ kn"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_1"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_2"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_3"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light"
+                     />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_4"
+                    android:src="@drawable/topbutton"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:adjustViewBounds="false"
+                    android:layout_weight="1"
+                    android:background="@color/button_material_light" />
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView android:id="@+id/lbl_wptname" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_wptname"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_wptname" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.-"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_wptinfo" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.- -.-"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_width="45dp">
+
+                    <TextView android:id="@+id/lbl_bearing" android:layout_width="match_parent" android:layout_height="20dp"
+                        android:text="@string/boat_brg"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_bearing" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.-"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                    <TextView android:id="@+id/txt_vmg" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="-.-"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_info"
+                android:src="@drawable/topbutton"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="2dp"
+                android:adjustViewBounds="false"
+                android:background="@color/button_material_light"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="pref_key_gui_theme"
+        android:title="@string/pref_title_gui_theme"
+        android:entries="@array/pref_gui_theme_values"
+        android:entryValues="@array/pref_gui_theme_values"
+        android:defaultValue="@string/pref_default_gui_theme"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <CheckBoxPreference
+        android:key="pref_key_gui_keep_screen_on"
+        android:title="@string/pref_title_gui_keep_screen_on"
+        android:defaultValue="@bool/pref_default_gui_keep_screen_on" />
+
+</PreferenceScreen>

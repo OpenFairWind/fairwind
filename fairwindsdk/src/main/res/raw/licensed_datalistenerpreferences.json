@@ -1,0 +1,128 @@
+{
+  "nmea0183bluetoothclient_000": {
+    "address": "No Device",
+    "isInput": true,
+    "isOutput": false,
+    "name": "nmea0183bluetoothclient_000",
+    "className": "it.uniparthenope.fairwind.services.bluetooth.NMEA0183BluetoothClient",
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "NMEA0183 Bluetooth Client"
+  },
+  "signalkwebsocketclient_000": {
+    "isInput": true,
+    "isOutput": false,
+    "name": "signalkwebsocketclient_000",
+    "className": "it.uniparthenope.fairwind.services.signalkclient.SignalkWebSocketClient",
+    "uri": "ws://192.167.9.33:3000/signalk/v1/stream?subscribe=all&stream=delta",
+    "uuid": "urn:mrn:imo:mmsi:323713387",
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "SignaK Web Socket Client"
+  },
+  "nmea0183tcpipclient_000": {
+    "isInput": false,
+    "isOutput": false,
+    "port": 10111,
+    "name": "nmea0183tcpipclient_000",
+    "host": "192.168.1.1",
+    "className": "it.uniparthenope.fairwind.services.tcpipclient.NMEA0183TcpIpClient",
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "NMEA0183 Tcp/Ip Client"
+  },
+  "nmea0183player_000": {
+    "fileName": "",
+    "isInput": false,
+    "isOutput": false,
+    "name": "nmea0183player_000",
+    "className": "it.uniparthenope.fairwind.services.file.NMEA0183Player",
+    "millis": 500,
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "NMEA0183 Player"
+  },
+  "signalktcpipserver_000": {
+    "isInput": true,
+    "isOutput": false,
+    "name": "signalktcpipserver_000",
+    "className": "it.uniparthenope.fairwind.services.tcpipserver.SignalkTcpIpServer",
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "SignalK Tcp/Ip Server"
+  },
+  "webserver_000": {
+    "isInput": true,
+    "isOutput": false,
+    "portWebSocket": 3000,
+    "name": "webserver_000",
+    "className": "it.uniparthenope.fairwind.services.web.WebServer",
+    "portWebService": 8080,
+    "wwwDocumentRootString": "",
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "Web Server"
+  },
+  "signalktcpipclient_000": {
+    "isInput": false,
+    "isOutput": false,
+    "port": 55556,
+    "name": "signalktcpipclient_000",
+    "host": "192.168.1.1",
+    "className": "it.uniparthenope.fairwind.services.tcpipclient.SignalkTcpIpClient",
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "SignalK Tcp/Ip Client"
+  },
+  "nmea0183usbserialclient_000": {
+    "baudRate": 115200,
+    "parityBit": 0,
+    "isInput": true,
+    "isOutput": false,
+    "stopBits": 1,
+    "name": "nmea0183usbserialclient_000",
+    "className": "it.uniparthenope.fairwind.services.usbserial.NMEA0183UsbSerialClient",
+    "dataBits": 8,
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "NMEA0183 Usb Serial Client"
+  },
+  "nmea0183tcpipserver_001": {
+    "isInput": true,
+    "isOutput": false,
+    "name": "nmea0183tcpipserver_001",
+    "className": "it.uniparthenope.fairwind.services.tcpipserver.NMEA0183TcpIpServer",
+    "serverPort": 4242,
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "NMEA0183 Tcp/Ip Server"
+  },
+  "nmea0183tcpipserver_000": {
+    "isInput": false,
+    "isOutput": false,
+    "name": "nmea0183tcpipserver_000",
+    "className": "it.uniparthenope.fairwind.services.tcpipserver.NMEA0183TcpIpServer",
+    "serverPort": 10110,
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "NMEA0183 Tcp/Ip Server (Only Input)"
+  },
+  "internallocations_000": {
+    "isInput": false,
+    "isOutput": false,
+    "name": "internallocations_000",
+    "className": "it.uniparthenope.fairwind.services.internallocations.InternalLocationsListener",
+    "timeout": 1000,
+    "enabled": false,
+    "desc": "Internal locations"
+  },
+  "mocklocations_000": {
+    "isInput": false,
+    "isOutput": false,
+    "name": "mocklocations_000",
+    "className": "it.uniparthenope.fairwind.services.mocklocations.MockLocationsListener",
+    "timeout": 1000,
+    "enabled": true,
+    "desc": "Mock locations"
+  }
+}

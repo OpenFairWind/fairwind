@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SingleDataView">
+        <attr name="vessel_uuid"  />
+        <attr name="mode"  />
+    </declare-styleable>
+
+    <attr name="propulsion_id" format="string"/>
+    <attr name="internal" format="boolean"/>
+    <attr name="minValue" format="float"/>
+    <attr name="maxValue" format="float"/>
+    <attr name="vessel_uuid" format="string"/>
+
+    <attr name="mode" >
+        <enum name="text" value="0"/>
+        <enum name="gauge" value="1"/>
+        <enum name="meter" value="2"/>
+        <enum name="plot" value="3"/>
+    </attr>
+
+</resources>

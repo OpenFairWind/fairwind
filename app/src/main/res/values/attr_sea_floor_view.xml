@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="SeaFloorView">
+        <attr name="seafloorview_hdg" format="float" />
+        <attr name="seafloorview_brg" format="float" />
+        <attr name="seafloorview_xte" format="float" />
+        <attr name="seafloorview_speed" format="float" />
+        <attr name="seafloorview_depth" format="float" />
+    </declare-styleable>
+</resources>

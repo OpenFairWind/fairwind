@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CompassView">
+        <attr name="compass"  />
+    </declare-styleable>
+
+    <attr name="compass" >
+        <enum name="magnetic" value="0"/>
+        <enum name="geographic" value="1"/>
+    </attr>
+</resources>

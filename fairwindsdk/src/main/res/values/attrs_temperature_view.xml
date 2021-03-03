@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TemperatureView">
+        <attr name="temperature_unit" />
+    </declare-styleable>
+
+    <attr name="temperature_unit">
+        <enum name="k" value="0"/>
+        <enum name="c" value="1"/>
+        <enum name="f" value="2"/>
+
+    </attr>
+</resources>
